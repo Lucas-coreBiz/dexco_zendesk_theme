@@ -265,15 +265,11 @@
         },
         {
           "identifier": "background_section_search",
-          "type": "file",
-          "description": "background_section_search_description",
-          "label": "background_section_search_label"
+          "type": "file"
         },
         {
           "identifier": "background_section_search_mobile",
-          "type": "file",
-          "description": "background_section_search_mobile_description",
-          "label": "background_section_search_mobile_label"
+          "type": "file"
         }
       ]
     },
