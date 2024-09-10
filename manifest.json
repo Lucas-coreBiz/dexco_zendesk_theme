@@ -264,16 +264,16 @@
           "label": "community_image_label"
         },
         {
-          "identifier": "background_section_search",
+          "identifier": "background_desktop",
           "type": "file",
-          "description": "background_section_search_description",
-          "label": "background_section_search_label"
+          "description": "background_desktop_description",
+          "label": "background_desktop_label"
         },
         {
-          "identifier": "background_section_search_mobile",
+          "identifier": "background_mobile",
           "type": "file",
-          "description": "background_section_search_mobile_description",
-          "label": "background_section_search_mobile_label"
+          "description": "background_mobile_description",
+          "label": "background_mobile_label"
         }
       ]
     },

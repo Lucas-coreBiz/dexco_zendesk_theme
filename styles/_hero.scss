@@ -1,6 +1,6 @@
 /***** Hero component *****/
 .hero {
-  background-image: url($background_section_search);
+  background-image: url($background_desktop);
   background-position: center;
   background-size: cover;
   height: 420px;
@@ -9,7 +9,7 @@
   
   @include mobile {
     height: 358px;
-    background-image: url($background_section_search_mobile);
+    background-image: url($background_mobile);
   }
 
   &-inner {
