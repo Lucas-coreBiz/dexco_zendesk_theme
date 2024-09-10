@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#17494D"
+          "value": "#111111"
         },
         {
           "identifier": "brand_text_color",
@@ -27,28 +27,28 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "#2F3941"
+          "value": "#111111"
         },
         {
           "identifier": "link_color",
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#1F73B7"
+          "value": "#111111"
         },
         {
           "identifier": "hover_link_color",
           "type": "color",
           "description": "hover_link_color_description",
           "label": "hover_link_color_label",
-          "value": "#0F3554"
+          "value": "#111111"
         },
         {
           "identifier": "visited_link_color",
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "#111111"
         },
         {
           "identifier": "background_color",
@@ -73,6 +73,10 @@
               "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             },
             {
+              "label": "Roboto",
+              "value": "'Roboto', sans-serif"
+            },
+            {
               "label": "Arial",
               "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
             },
@@ -133,7 +137,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "'Roboto', Arial, Helvetica, sans-serif"
         },
         {
           "identifier": "text_font",
@@ -146,6 +150,10 @@
               "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             },
             {
+              "label": "Roboto",
+              "value": "'Roboto', sans-serif"
+            },
+            {
               "label": "Arial",
               "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
             },
@@ -206,7 +214,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "'Roboto', Arial, Helvetica, sans-serif"
         }
       ]
     },
@@ -214,7 +222,7 @@
       "label": "brand_group_label",
       "variables": [
         {
-          "identifier": "logo",
+          "identifier": "logodeca",
           "type": "file",
           "description": "logo_description",
           "label": "logo_label"
@@ -224,7 +232,7 @@
           "type": "checkbox",
           "description": "show_brand_name_description",
           "label": "show_brand_name_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "favicon",
@@ -254,6 +262,18 @@
           "type": "file",
           "description": "community_image_description",
           "label": "community_image_label"
+        },
+        {
+          "identifier": "background_section_search",
+          "type": "file",
+          "description": "background_section_search_description",
+          "label": "background_section_search_label"
+        },
+        {
+          "identifier": "background_section_search_mobile",
+          "type": "file",
+          "description": "background_section_search_description",
+          "label": "background_section_search_label"
         }
       ]
     },

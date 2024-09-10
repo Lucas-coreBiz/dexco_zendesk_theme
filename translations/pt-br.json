@@ -19,6 +19,8 @@
   "community_background_image_description": "Imagem principal na página de tópicos da comunidade",
   "community_background_image_label": "Imagem principal da comunidade",
   "community_image_description": "Imagem da seção da comunidade na página inicial",
+  "background_section_search_description": "Imagem principal pesquisa",
+  "background_section_search_label": "Banner principal de pesquisa",
   "community_image_label": "Banner da comunidade",
   "community_post_group_label": "Elementos da publicação da comunidade",
   "community_topic_group_label": "Elementos do tópico da comunidade",

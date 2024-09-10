@@ -6,13 +6,12 @@ $padding-right: 20px;
 
 .search-container {
   position: relative;
+  margin-top: 39px;
 }
 
 .search {
-  border-color: $high-contrast-border-color;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: 1px;
+  border-bottom: 1px solid $dexco-1;
+  background: #ffff;
   display: flex;
   position: relative;
   transition: $input-transition;
@@ -24,7 +23,6 @@ $padding-right: 20px;
   input[type="search"], 
   .clear-button {
     background-color: #fff;
-    border-radius: 30px;
     border: none;
   }
 
@@ -37,13 +35,35 @@ $padding-right: 20px;
     appearance: none;
     -webkit-appearance: none;
     box-sizing: border-box;
-    color: $field-text-color;
     flex: 1 1 auto;
     height: 40px;
     width: 100%;
+    color: $dexco-1;
+    font-family: $main-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.8px;
 
     &:focus {
-      color: $field-text-focus-color;
+      color: $dexco-1;
+      font-family: $main-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.8px;
+    }
+
+    &::placeholder {
+      color: $dexco-1;
+      font-family: $main-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.8px;
     }
 
     &::-webkit-search-decoration,
@@ -70,11 +90,7 @@ $padding-right: 20px;
     flex: none;
     justify-content: center;
     padding: 0 15px;
-
-    &:hover {
-      background-color: $brand_color;
-      color: #fff;
-    }
+    outline: none;
 
     &:focus {
       @include focus-ring;
@@ -90,8 +106,8 @@ $padding-right: 20px;
 
 [dir="ltr"] .search {
   input[type="search"] {
-    padding-left: $padding-left;
-    padding-right: $padding-right;
+    padding-left: 50px;
+    padding-right: 20px;
   }
 
   &-has-value input[type="search"] {
@@ -149,15 +165,15 @@ $padding-right: 20px;
 .search-icon {
   @include vertical-align;
   position: absolute;
-  left: 15px;
+  left: 16px;
   z-index: 1;
-  width: 18px;
-  height: 18px;
-  color: $icon-color;
+  width: 24px;
+  height: 24px;
+  color: $dexco-1;
   pointer-events: none;
 
   [dir="rtl"] & {
     left: auto;
-    right: 15px;
+    right: 16px;
   }
 }
