@@ -625,6 +625,8 @@ ul {
   top: 0;
   z-index: 999;
   background: #fff;
+  border-bottom: 1px solid $deca_color_text;
+  padding: 34px 0;
 }
 
 .header-container {
@@ -633,7 +635,6 @@ ul {
   padding: 0 5%;
   align-items: center;
   display: flex;
-  height: 71px;
   justify-content: space-between;
 }
 @media (min-width: 1160px) {
@@ -900,6 +901,51 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+
+.final-footer {
+  padding: 25px 0;
+}
+
+.final-footer-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1160px) {
+  .final-footer-container {
+    padding: 0;
+    width: 90%;
+  }
+}
+
+.payments-methods {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.address p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 /***** Breadcrumbs *****/

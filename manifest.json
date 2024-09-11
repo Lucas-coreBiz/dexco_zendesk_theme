@@ -367,6 +367,66 @@
           "type": "file",
           "description": "durafloor_icon_description",
           "label": "durafloor_icon_label"
+        },
+        {
+          "identifier": "visa_icon",
+          "type": "file",
+          "description": "visa_icon_description",
+          "label": "visa_icon_label"
+        },
+        {
+          "identifier": "mastercard_icon",
+          "type": "file",
+          "description": "mastercard_icon_description",
+          "label": "mastercard_icon_label"
+        },
+        {
+          "identifier": "dinners_icon",
+          "type": "file",
+          "description": "dinners_icon_description",
+          "label": "dinners_icon_label"
+        },
+        {
+          "identifier": "hipercard_icon",
+          "type": "file",
+          "description": "hipercard_icon_description",
+          "label": "hipercard_icon_label"
+        },
+        {
+          "identifier": "amex_icon",
+          "type": "file",
+          "description": "amex_icon_description",
+          "label": "amex_icon_label"
+        },
+        {
+          "identifier": "elo_icon",
+          "type": "file",
+          "description": "elo_icon_description",
+          "label": "elo_icon_label"
+        },
+        {
+          "identifier": "boleto_icon",
+          "type": "file",
+          "description": "boleto_icon_description",
+          "label": "boleto_icon_label"
+        },
+        {
+          "identifier": "pix_icon",
+          "type": "file",
+          "description": "pix_icon_description",
+          "label": "pix_icon_label"
+        },
+        {
+          "identifier": "corebiz_icon",
+          "type": "file",
+          "description": "corebiz_icon_description",
+          "label": "corebiz_icon_label"
+        },
+        {
+          "identifier": "vtex_icon",
+          "type": "file",
+          "description": "vtex_icon_description",
+          "label": "vtex_icon_label"
         }
       ]
     },

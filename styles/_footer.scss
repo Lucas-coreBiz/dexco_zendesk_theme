@@ -101,3 +101,42 @@
   align-items: center;
   gap: 50px;
 }
+
+.final-footer {
+  padding: 25px 0;
+}
+
+.final-footer-container {
+  @include max-width-container;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payments-methods {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.05rem;
+    margin: 0;
+  }
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

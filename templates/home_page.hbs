@@ -2,12 +2,19 @@
   document.addEventListener("DOMContentLoaded", function () {
     const sectionItems = document.querySelectorAll('.section-item');
     const articlesList = document.getElementById('articles-list');
-    const sectionTitle = document.createElement('h2'); // Cria um elemento para o título da seção
+    const sectionTitle = document.createElement('h2');
 
     function loadArticles(sectionId, sectionName) {
-      sectionTitle.textContent = sectionName; // Define o título da seção
-      articlesList.innerHTML = ''; // Limpa a lista de artigos
-      articlesList.prepend(sectionTitle); // Adiciona o título acima dos artigos
+      sectionTitle.textContent = sectionName;
+      articlesList.innerHTML = '';
+      articlesList.prepend(sectionTitle);
+
+      sectionItems.forEach(item => item.classList.remove('selected'));
+
+      const selectedItem = document.querySelector(`.section-item[data-section-id="${sectionId}"]`);
+      if (selectedItem) {
+        selectedItem.classList.add('selected');
+      }
 
       fetch(`/api/v2/help_center/sections/${sectionId}/articles.json`)
         .then(response => response.json())
@@ -88,17 +95,20 @@
       });
     });
 
-    // Contact Options
     const sacButton = document.getElementById('sac-button');
-    const contactContent = document.getElementById('contact-content');
+    const sacInfo = document.getElementById('sac-info');
 
     sacButton.addEventListener('click', function () {
-      contactContent.innerHTML = '<p>Fale com SAC (11) 2853-0330</p><p>Das 08 às 18h, de segunda à sexta, exceto feriado.</p>';
+      sacInfo.style.display = sacInfo.style.display === 'none' ? 'block' : 'none';
     });
   });
 </script>
 
-
+<style>
+  .section-item.selected {
+    background-color: {{settings.deca_color_secondary}};
+  }
+</style>
 
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
@@ -154,5 +164,10 @@
     <button class="contact-button" id="sac-button">SAC</button>
     <a class="contact-button" id="whatsapp-button" href="https://wa.me/5511999999999" class="contact-link" target="_blank">WhatsApp</a>
   </div>
-  <div id="contact-content" class="contact-content"></div>
+  <div id="contact-content" class="contact-content">
+    <div id="sac-info" style="display: none;">
+      <p>Fale com SAC (11) 2853-0330</p>
+      <p>Das 08 às 18h, de segunda à sexta, exceto feriado.</p>
+    </div>
+  </div>
 </section>
