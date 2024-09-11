@@ -295,7 +295,12 @@
           "type": "file",
           "description": "background_mobile_description",
           "label": "background_mobile_label"
-        },
+        }
+      ]
+    },
+    {
+      "label": "footer_images_label",
+      "variables": [
         {
           "identifier": "instagram_icon",
           "type": "file",
@@ -453,6 +458,18 @@
           "description": "scoped_community_search_description",
           "label": "scoped_community_search_label",
           "value": true
+        }
+      ]
+    },
+    {
+      "label": "form_group_label",
+      "variables": [
+        {
+          "identifier": "form_id_default",
+          "type": "text",
+          "description": "form_id_description",
+          "label": "form_id_label",
+          "value": "27039696134163"
         }
       ]
     },
