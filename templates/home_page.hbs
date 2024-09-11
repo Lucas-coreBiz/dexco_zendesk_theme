@@ -18,7 +18,7 @@
         selectedItem.classList.add('selected');
       }
 
-      fetch(`/api/v2/help_center/sections/${sectionId}/articles.json`)
+      fetch(`https://lojadeca.zendesk.com/api/v2/help_center/sections/${sectionId}/articles.json`)
         .then(response => response.json())
         .then(data => {
           const articles = data.articles;
@@ -59,7 +59,7 @@
                 });
 
                 if (articleBody.innerHTML === '') {
-                  fetch(`/api/v2/help_center/articles/${article.id}.json`)
+                  fetch(`https://lojadeca.zendesk.com/api/v2/help_center/articles/${article.id}.json`)
                     .then(response => response.json())
                     .then(data => {
                       articleBody.innerHTML = `<div>${data.article.body}</div>`;
