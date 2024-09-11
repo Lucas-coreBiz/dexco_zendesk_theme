@@ -3,6 +3,7 @@
     const sectionItems = document.querySelectorAll('.section-item');
     const articlesList = document.getElementById('articles-list');
     const sectionTitle = document.createElement('h2');
+    const sectionSelect = document.getElementById('section-select');
 
     function loadArticles(sectionId, sectionName) {
       sectionTitle.textContent = sectionName;
@@ -10,6 +11,7 @@
       articlesList.prepend(sectionTitle);
 
       sectionItems.forEach(item => item.classList.remove('selected'));
+      sectionSelect.value = sectionId;
 
       const selectedItem = document.querySelector(`.section-item[data-section-id="${sectionId}"]`);
       if (selectedItem) {
@@ -96,6 +98,13 @@
       });
     });
 
+    sectionSelect.addEventListener('change', function() {
+      const selectedOption = this.options[this.selectedIndex];
+      const sectionId = selectedOption.value;
+      const sectionName = selectedOption.textContent;
+      loadArticles(sectionId, sectionName);
+    });
+
     const sacButton = document.getElementById('sac-button');
     const sacInfo = document.getElementById('sac-info');
 
@@ -116,12 +125,6 @@
     });
   });
 </script>
-
-<style>
-  .section-item.selected {
-    background-color: {{settings.deca_color_secondary}};
-  }
-</style>
 
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
@@ -161,6 +164,17 @@
       </ul>
     </div>
 
+    <div class="mobile-section-select">
+      <p>Selecione o assunto que deseja ajuda</p>
+      <select id="section-select">
+        {{#each categories}}
+        {{#each this.sections}}
+        <option value="{{this.id}}">{{this.name}}</option>
+        {{/each}}
+        {{/each}}
+      </select>
+    </div>
+
     <div class="articles-container">
       <div id="articles-list"></div>
       <div id="article-content"></div>
@@ -194,3 +208,4 @@
     </div>
   </div>
 </section>
+

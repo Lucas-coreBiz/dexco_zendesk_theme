@@ -802,6 +802,12 @@ ul {
 .footer {
   background-color: $deca_color_primary;
   padding: 80px 0;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 40px;
+  }
 }
 
 .footer-container {
@@ -822,17 +828,12 @@ ul {
 .footer-sections {
   display: flex;
   gap: 150px;
-  flex-wrap: wrap;
   width: 100%;
 }
-@media (min-width: 1024px) {
-  .footer-sections {
-    gap: 100px;
-  }
-}
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .footer-sections {
     gap: 50px;
+    flex-wrap: wrap;
   }
 }
 
@@ -842,7 +843,7 @@ ul {
   flex-direction: column;
   gap: 56px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .footer-socials {
     flex-direction: row;
     justify-content: center;
@@ -856,14 +857,26 @@ ul {
   gap: 150px;
   width: 100%;
 }
+.footer-section-links .mobile {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .footer-section-links .mobile {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   .footer-section-links {
     gap: 100px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .footer-section-links {
     gap: 50px;
+    flex-direction: column;
+  }
+  .footer-section-links .last {
+    display: none;
   }
 }
 
@@ -933,6 +946,11 @@ ul {
   gap: 50px;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .footer-brand {
+    flex-direction: column;
+  }
+}
 
 .final-footer {
   padding: 25px 0;
@@ -953,10 +971,20 @@ ul {
     width: 90%;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .final-footer-container {
     flex-direction: column;
     gap: 20px;
+  }
+}
+.final-footer-container .payment-method-title {
+  display: none;
+}
+@media (max-width: 768px) {
+  .final-footer-container .payment-method-title {
+    display: block;
+    margin: 0;
+    font-size: 14px;
   }
 }
 
@@ -964,6 +992,11 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+@media (max-width: 768px) {
+  .payments-methods {
+    gap: 5px;
+  }
 }
 
 .address {
@@ -978,6 +1011,7 @@ ul {
   line-height: 20px;
   letter-spacing: 0.05rem;
   margin: 0;
+  text-align: center;
 }
 
 .partners {
@@ -1393,6 +1427,11 @@ ul {
   background: #dbc79a;
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .background-block {
+    margin-bottom: 40px;
+  }
+}
 
 .help-center {
   max-width: 1360px;
@@ -1416,6 +1455,12 @@ ul {
   letter-spacing: 1.8px;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .help-center-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 
 .help-center-container {
   display: flex;
@@ -1423,11 +1468,40 @@ ul {
   margin: 60px 0;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .help-center-container {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+}
 
 .sidebar {
   padding: 0 40px 0 0;
   border-right: 1px solid #e6e6e6;
   flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+#section-select {
+  display: none;
+}
+@media (max-width: 768px) {
+  #section-select {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    border: 1px solid $deca_color_secondary;
+    background: transparent;
+  }
+}
+
+.section-item.selected {
+  background-color: $deca_color_secondary;
 }
 
 #sections-list {
@@ -1512,6 +1586,12 @@ ul {
   padding: 0 16px;
   margin: 0;
 }
+@media (max-width: 768px) {
+  #articles-list h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
 .article-item {
   cursor: pointer;
@@ -1531,6 +1611,12 @@ ul {
   letter-spacing: 0.8px;
   transition: font-weight 0.3s ease;
   margin-top: 22px;
+}
+@media (max-width: 768px) {
+  .article-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .article-item:hover {
@@ -1554,11 +1640,37 @@ ul {
   transform: rotate(180deg);
 }
 
+.mobile-section-select {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-section-select {
+    display: block;
+  }
+  .mobile-section-select p {
+    margin: 0 0 7px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.05rem;
+    color: $text_color;
+  }
+}
+
 .contact-options {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1287px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+@media (min-width: 1287px) {
+  .contact-options {
+    padding: 0;
+    width: 80%;
+  }
 }
 
 .contact-titles {
@@ -1568,26 +1680,36 @@ ul {
   gap: 8px;
 }
 .contact-titles h3 {
-  color: #111111;
+  color: $text_color;
   text-align: center;
-  font-family: $text_font;
   font-size: 26px;
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.05rem;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .contact-titles h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .contact-titles p {
   color: #4d4d4d;
   text-align: center;
-  font-family: $text_font;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.05rem;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .contact-titles p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .contact-buttons {
@@ -1595,6 +1717,11 @@ ul {
   justify-content: center;
   gap: 24px;
   margin-top: 24px;
+}
+@media (max-width: 768px) {
+  .contact-buttons {
+    flex-direction: column;
+  }
 }
 
 .contact-button {
@@ -1618,14 +1745,19 @@ ul {
   transition: background-color 0.3s ease;
   min-width: 217px;
 }
-
-.contact-button:hover {
-  background-color: #dbc79a;
-  text-decoration: none;
+@media (max-width: 768px) {
+  .contact-button {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-button:hover {
+    background-color: #dbc79a;
+    text-decoration: none;
+  }
 }
 
 .contact-content {
-  margin-top: 60px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1633,16 +1765,24 @@ ul {
 }
 .contact-content p {
   margin: 0;
-  color: #111111;
+  color: $text_color;
   text-align: center;
-  font-family: $text_font;
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
   letter-spacing: 0.8px;
 }
 .contact-content p:first-child {
-  font-weight: 400;
+  font-weight: bold;
+}
+
+#sac-info {
+  padding-top: 60px;
+}
+@media (max-width: 768px) {
+  #sac-info {
+    padding-top: 40px;
+  }
 }
 
 /***** Recent activity *****/

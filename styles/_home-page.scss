@@ -9,6 +9,10 @@
   height: 40px;
   background: $deca-2;
   margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 40px
+  }
 }
 
 .help-center {
@@ -24,6 +28,11 @@
   line-height: 44px;
   letter-spacing: 1.8px;
   margin: 0;
+
+  @include mobile {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 .help-center-container {
@@ -31,13 +40,40 @@
   gap: 40px;
   margin: 60px 0;
   width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+    margin: 40px 0;
+  }
 }
 
 .sidebar {
   padding: 0 40px 0 0;
   border-right: 1px solid $dexco-5;
   flex-shrink: 0;
+
+  @include mobile {
+    display: none;
+  }
 }
+
+#section-select {
+  display: none;
+
+  @include mobile {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    border: 1px solid $deca_color_secondary;
+    background: transparent;
+  }
+}
+
+.section-item.selected {
+  background-color: $deca_color_secondary;
+}
+
 
 #sections-list {
   display: flex;
@@ -121,6 +157,11 @@
     text-transform: uppercase;
     padding: 0 16px;
     margin: 0;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -133,7 +174,6 @@
   align-items: center;
   gap: 10px;
   justify-content: space-between;
-
   color: $dexco-1;
   font-family: $main-font;
   font-size: 16px;
@@ -142,9 +182,12 @@
   line-height: 22px;
   letter-spacing: 0.8px;
   transition: font-weight 0.3s ease;
-
   margin-top: 22px;
 
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .article-item:hover {
@@ -168,12 +211,30 @@
   transform: rotate(180deg);
 }
 
+.mobile-section-select {
+  display: none;
+
+  @include mobile {
+    display: block;
+
+    p {
+        margin: 0 0 7px 0;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.05rem;
+        color: $text_color;
+      }
+    }
+}
 
 .contact-options {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include max-width-container-small;
 }
 
 .contact-titles {
@@ -183,27 +244,35 @@
   gap: 8px;
 
   h3 {
-    color: $dexco-1;
+    color: $text_color;
     text-align: center;
-    font-family: $main-font;
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    letter-spacing: 1.3px;
+    letter-spacing: 0.05rem;
     margin: 0;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   p {
-    color: $dexco-2;
+    color: #4d4d4d;
     text-align: center;
-    font-family: $main-font;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 22px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     margin: 0;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -213,6 +282,10 @@
   justify-content: center;
   gap: 24px;
   margin-top: 24px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .contact-button {
@@ -235,15 +308,20 @@
   gap: 10px;
   transition: background-color 0.3s ease;
   min-width: 217px;
-}
 
-.contact-button:hover {
-  background-color: $deca-2;
-  text-decoration: none;
+  @include mobile {
+    width: 100%;
+  }
+
+  &:hover {
+    @include desktop {
+      background-color: $deca-2;
+      text-decoration: none;
+    }
+  }
 }
 
 .contact-content {
-  margin-top: 60px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -252,16 +330,23 @@
   p {
     margin: 0;
 
-    color: $dexco-1;
+    color: $text_color;
     text-align: center;
-    font-family: $main-font;
     font-size: 16px;
     font-style: normal;
     line-height: 22px;
     letter-spacing: 0.8px;
 
     &:first-child {
-      font-weight: 400;
+      font-weight: bold;
     }
+  }
+}
+
+#sac-info {
+  padding-top: 60px;
+
+  @include mobile {
+    padding-top: 40px;
   }
 }

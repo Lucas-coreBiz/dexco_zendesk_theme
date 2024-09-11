@@ -1,7 +1,12 @@
 /***** Footer *****/
 .footer {
   background-color: $deca_color_primary;
-  padding: 80px 0
+  padding: 80px 0;
+  margin-top: 60px;
+
+  @include mobile {
+    margin-top: 40px;
+  }
 }
 
 .footer-container {
@@ -14,15 +19,11 @@
 .footer-sections {
   display: flex;
   gap: 150px;
-  flex-wrap: wrap;
   width: 100%;
 
-  @include desktop {
-    gap: 100px;
-  }
-
-  @include tablet {
+  @include mobile {
     gap: 50px;
+    flex-wrap: wrap;
   }
 }
 
@@ -32,7 +33,7 @@
   flex-direction: column;
   gap: 56px;
 
-  @include tablet {
+  @include mobile {
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -46,12 +47,25 @@
   gap: 150px;
   width: 100%;
 
+  .mobile {
+    display: flex;
+    
+    @include tablet {
+      display: none;
+    }
+  }
+
   @include desktop {
     gap: 100px;
   }
 
-  @include tablet {
+  @include mobile {
     gap: 50px;
+    flex-direction: column;
+
+    .last {
+      display: none;
+    }
   }
 }
 
@@ -125,6 +139,10 @@
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .final-footer {
@@ -139,9 +157,19 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @include tablet {
+  @include mobile {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .payment-method-title {
+    display: none;
+
+    @include mobile {
+      display: block;
+      margin: 0;
+      font-size: 14px;
+    }
   }
 }
 
@@ -149,6 +177,10 @@
   display: flex;
   align-items: center;
   gap: 16px;
+
+  @include mobile {
+    gap: 5px;
+  }
 }
 
 .address {
@@ -163,6 +195,7 @@
     line-height: 20px;
     letter-spacing: 0.05rem;
     margin: 0;
+    text-align: center;
   }
 }
 
