@@ -152,6 +152,10 @@
             {
               "label": "Trebuchet MS",
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            },
+            {
+              "label": "Roboto",
+              "value": "'Roboto', sans-serif"
             }
           ],
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -225,6 +229,10 @@
             {
               "label": "Trebuchet MS",
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            },
+            {
+              "label": "Roboto",
+              "value": "'Roboto', sans-serif"
             }
           ],
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
