@@ -5,9 +5,7 @@
 }
 
 .footer-container {
-  width: 100%;
-  max-width: 1267px;
-  margin: 0 auto;
+  @include max-width-container-small;
   display: flex;
   flex-direction: column;
   gap: 97px;
@@ -16,7 +14,16 @@
 .footer-sections {
   display: flex;
   gap: 150px;
+  flex-wrap: wrap;
   width: 100%;
+
+  @include desktop {
+    gap: 100px;
+  }
+
+  @include tablet {
+    gap: 50px;
+  }
 }
 
 .footer-socials {
@@ -24,6 +31,12 @@
   align-items: center;
   flex-direction: column;
   gap: 56px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 
@@ -32,6 +45,14 @@
   justify-content: space-between;
   gap: 150px;
   width: 100%;
+
+  @include desktop {
+    gap: 100px;
+  }
+
+  @include tablet {
+    gap: 50px;
+  }
 }
 
 .footer-section-column {
@@ -101,7 +122,9 @@
 .footer-brand {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .final-footer {
@@ -114,6 +137,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .payments-methods {

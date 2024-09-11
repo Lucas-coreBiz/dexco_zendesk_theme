@@ -28,6 +28,28 @@
   padding: 0 5%;
 }
 
+@mixin max-width-container-medium {
+  @media (min-width: #{$max-width-container-medium}) {
+    padding: 0;
+    width: 85%;
+  }
+
+  max-width: $max-width-container-medium;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+@mixin max-width-container-small {
+  @media (min-width: #{$max-width-container-small}) {
+    padding: 0;
+    width: 80%;
+  }
+
+  max-width: $max-width-container-small;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
 @mixin vertical-align {
   position: relative;
   top: 48%;
