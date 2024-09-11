@@ -798,34 +798,108 @@ ul {
 
 /***** Footer *****/
 .footer {
-  border-top: 1px solid #ddd;
+  background-color: $deca_color_primary;
   margin-top: 60px;
-  padding: 30px 0;
+  padding: 80px 0;
 }
-.footer a {
-  color: lighten($text_color, 20%);
-}
-.footer-inner {
+
+.footer-container {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 97px;
 }
 @media (min-width: 1160px) {
-  .footer-inner {
+  .footer-container {
     padding: 0;
     width: 90%;
   }
 }
-.footer-language-selector button {
-  color: lighten($text_color, 20%);
-  display: inline-block;
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
 }
 
-.powered-by-zendesk a,
-.powered-by-zendesk a:visited {
-  color: lighten($text_color, 20%);
+.footer-socials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.footer-section-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.footer-section-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+}
+.footer-card h4 {
+  margin: 0 0 16px 0;
+  color: $deca_color_secondary;
+  font-size: 22px;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+.footer-card p {
+  margin: 0;
+  color: $deca_color_text;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+}
+.footer-card span {
+  margin: 0 0 30px 0;
+  color: $deca_color_secondary;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-link a {
+  margin: 0;
+  color: $deca_color_text;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+}
+.footer-link a:hover {
+  text-decoration: none;
+}
+
+.footer-brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 /***** Breadcrumbs *****/

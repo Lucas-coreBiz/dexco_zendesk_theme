@@ -1,25 +1,89 @@
 <footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
-
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-            </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
+  <div class="footer-container">
+    <div class="footer-sections">
+      <div class="footer-socials">
+        <a href="">
+          <img src="{{settings.instagram_icon}}" alt="Instagram" />
+        </a>
+        <a href="">
+          <img src="{{settings.facebook_icon}}" alt="Facebook" />
+        </a>
+        <a href="">
+          <img src="{{settings.youtube_icon}}" alt="YouTube" />
+        </a>
+        <a href="">
+          <img src="{{settings.pinterest_icon}}" alt="Pinterest" />
+        </a>
+      </div>
+      <div class="footer-section-links">
+        <div class="footer-section-column">
+          <div class="footer-card">
+            <h4>Institucional</h4>
+            <div class="footer-link">
+              <a href="#">Quem Somos</a>
+            </div>
+          </div>
+           <div class="footer-card">
+            <h4>Conta</h4>
+             <div class="footer-link">
+              <a href="https://www.decaloja.com.br/account">Minha conta</a>
+              <a href="https://www.decaloja.com.br/account#/orders">Meus pedidos</a>
+            </div>
+          </div>
         </div>
-      {{/if}}
+        <div class="footer-section-column">
+          <div class="footer-card">
+            <h4>Links úteis</h4>
+            <div class="footer-link">
+              <a href="https://www.decaloja.com.br/institucional/politica-de-entrega">Política de Entrega</a>
+              <a href="https://privacy-central.securiti.ai/#/dsr/aa0cddb5-9d17-4e58-9686-94d48fa52020">Portal de Atendimento aos Titulares</a>
+              <a href="https://www.decaloja.com.br/institucional/politica-de-privacidade">Privacidade e proteção de dados</a>
+              <a href="https://www.decaloja.com.br/institucional/politica-de-pagamento">Política de Pagamento</a>
+              <a href="https://www.decaloja.com.br/institucional/politica-de-troca-e-devolucao">Política de Devolução</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section-column">
+          <div class="footer-card">
+            <h4>Atendimento</h4>
+            <p>Fale com o Pós-Venda:</p>
+            <span>(11) 2853-0330</span>
+            <div class="footer-links-action">
+              <div class="footer-link">
+                <a href="https://api.whatsapp.com/send?phone=5511995044983&text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Loja%20Deca%2C%20pode%20me%20ajudar%3F">Fale com um especialista</a>
+                <a href="mailto:atendimento.sac@dex.co">Enviar um email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-brands">
+      <div class="footer-brand-dexco">
+        <img src="{{settings.dexco_icon}}" alt="Dexco" />
+      </div>
+      <div class="footer-brand">
+        <img src="{{settings.deca_icon}}" alt="Deca" />
+        <img src="{{settings.portinari_icon}}" alt="Portinari" />
+        <img src="{{settings.hydra_icon}}" alt="Hydra" />
+        <img src="{{settings.duratex_icon}}" alt="Duratex" />
+        <img src="{{settings.castelatto_icon}}" alt="Castelatto" />
+        <img src="{{settings.ceusa_icon}}" alt="Ceusa" />
+        <img src="{{settings.durafloor_icon}}" alt="Durafloor" />
+      </div>
     </div>
   </div>
 </footer>
+<div class="final-footer">
+  <div class="final-footer-container">
+    <div class="payments-methods">
+
+    </div>
+    <div class="address">
+      <p>Dexco S.A. | CNPJ: 97.837.181/0001-47</p>
+      <p>Av. Paulista - 1938 - Bela Vista - São Paulo - SP - Cep: 01310-942</p>
+    </div>
+    <div class="partners"></div>
+  </div>
+</div>

@@ -27,7 +27,7 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "#111111"
+          "value": "#292728"
         },
         {
           "identifier": "link_color",
@@ -55,7 +55,28 @@
           "type": "color",
           "description": "background_color_description",
           "label": "background_color_label",
-          "value": "#FFFFFF"
+          "value": "#ffff"
+        },
+        {
+          "identifier": "deca_color_primary",
+          "type": "color",
+          "description": "deca_color_primary_description",
+          "label": "deca_color_primary_label",
+          "value": "#292728"
+        },
+        {
+          "identifier": "deca_color_secondary",
+          "type": "color",
+          "description": "deca_color_secondary_description",
+          "label": "deca_color_secondary_label",
+          "value": "#dbc79a"
+        },
+        {
+          "identifier": "deca_color_text",
+          "type": "color",
+          "description": "deca_color_text_description",
+          "label": "deca_color_text_label",
+          "value": "#f4f4f5"
         }
       ]
     },
@@ -266,6 +287,78 @@
           "type": "file",
           "description": "background_mobile_description",
           "label": "background_mobile_label"
+        },
+        {
+          "identifier": "instagram_icon",
+          "type": "file",
+          "description": "instagram_icon_description",
+          "label": "instagram_icon_label"
+        },
+        {
+          "identifier": "facebook_icon",
+          "type": "file",
+          "description": "facebook_icon_description",
+          "label": "facebook_icon_label"
+        },
+        {
+          "identifier": "youtube_icon",
+          "type": "file",
+          "description": "youtube_icon_description",
+          "label": "youtube_icon_label"
+        },
+        {
+          "identifier": "pinterest_icon",
+          "type": "file",
+          "description": "pinterest_icon_description",
+          "label": "pinterest_icon_label"
+        },
+        {
+          "identifier": "dexco_icon",
+          "type": "file",
+          "description": "dexco_icon_description",
+          "label": "dexco_icon_label"
+        },
+        {
+          "identifier": "deca_icon",
+          "type": "file",
+          "description": "deca_icon_description",
+          "label": "deca_icon_label"
+        },
+        {
+          "identifier": "portinari_icon",
+          "type": "file",
+          "description": "portinari_icon_description",
+          "label": "portinari_icon_label"
+        },
+        {
+          "identifier": "hydra_icon",
+          "type": "file",
+          "description": "hydra_icon_description",
+          "label": "hydra_icon_label"
+        },
+        {
+          "identifier": "duratex_icon",
+          "type": "file",
+          "description": "duratex_icon_description",
+          "label": "duratex_icon_label"
+        },
+        {
+          "identifier": "castelatto_icon",
+          "type": "file",
+          "description": "castelatto_icon_description",
+          "label": "castelatto_icon_label"
+        },
+        {
+          "identifier": "ceusa_icon",
+          "type": "file",
+          "description": "ceusa_icon_description",
+          "label": "ceusa_icon_label"
+        },
+        {
+          "identifier": "durafloor_icon",
+          "type": "file",
+          "description": "durafloor_icon_description",
+          "label": "durafloor_icon_label"
         }
       ]
     },
