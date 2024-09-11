@@ -44,7 +44,7 @@ $header-height: 71px;
   font-weight: 300;
   letter-spacing: 0.05rem;
   text-align: center;
-  color: $deca-1;
+  color: $deca_color_primary;
   text-decoration: underline;
   transition: all 0.3s ease;
   border: 1px solid #fff;
@@ -54,7 +54,7 @@ $header-height: 71px;
   }
 
   &:hover {
-    border: 1px solid $deca-2;
+    border: 1px solid $deca_color_secondary;
   }
 }
 

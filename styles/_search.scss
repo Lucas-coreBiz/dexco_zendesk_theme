@@ -10,7 +10,7 @@ $padding-right: 20px;
 }
 
 .search {
-  border-bottom: 1px solid $dexco-1;
+  border-bottom: 1px solid $text_color;
   background: #ffff;
   display: flex;
   position: relative;
@@ -38,7 +38,7 @@ $padding-right: 20px;
     flex: 1 1 auto;
     height: 40px;
     width: 100%;
-    color: $link_color;
+    color: $text_color;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -46,7 +46,7 @@ $padding-right: 20px;
     letter-spacing: 0.8px;
 
     &:focus {
-      color: $link_color;
+      color: $text_color;
       font-size: 16px;
       font-style: normal;
       font-weight: 300;
@@ -55,7 +55,7 @@ $padding-right: 20px;
     }
 
     &::placeholder {
-      color: $link_color;
+      color: $text_color;
       font-size: 16px;
       font-style: normal;
       font-weight: 300;
@@ -166,7 +166,7 @@ $padding-right: 20px;
   z-index: 1;
   width: 24px;
   height: 24px;
-  color: $dexco-1;
+  color: $text_color;
   pointer-events: none;
 
   [dir="rtl"] & {

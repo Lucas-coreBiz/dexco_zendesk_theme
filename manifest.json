@@ -264,26 +264,34 @@
       ]
     },
     {
-      "label": "images_group_label",
+      "label": "search_group_label",
       "variables": [
         {
-          "identifier": "homepage_background_image",
-          "type": "file",
-          "description": "homepage_background_image_description",
-          "label": "homepage_background_image_label"
+          "identifier": "instant_search",
+          "type": "checkbox",
+          "description": "instant_search_description",
+          "label": "instant_search_label",
+          "value": true
         },
         {
-          "identifier": "community_background_image",
-          "type": "file",
-          "description": "community_background_image_description",
-          "label": "community_background_image_label"
+          "identifier": "scoped_kb_search",
+          "type": "checkbox",
+          "description": "scoped_knowledge_base_search_description",
+          "label": "scoped_knowledge_base_search_label",
+          "value": true
         },
         {
-          "identifier": "community_image",
-          "type": "file",
-          "description": "community_image_description",
-          "label": "community_image_label"
-        },
+          "identifier": "scoped_community_search",
+          "type": "checkbox",
+          "description": "scoped_community_search_description",
+          "label": "scoped_community_search_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "images_group_label",
+      "variables": [
         {
           "identifier": "background_desktop",
           "type": "file",
@@ -341,6 +349,18 @@
           "type": "file",
           "description": "contact_icon_whatsapp_description",
           "label": "contact_icon_whatsapp_label"
+        }
+      ]
+    },
+    {
+      "label": "form_group_label",
+      "variables": [
+        {
+          "identifier": "form_id_default",
+          "type": "text",
+          "description": "form_id_description",
+          "label": "form_id_label",
+          "value": "27039696134163"
         }
       ]
     },
@@ -478,44 +498,6 @@
           "type": "file",
           "description": "vtex_icon_description",
           "label": "vtex_icon_label"
-        }
-      ]
-    },
-    {
-      "label": "search_group_label",
-      "variables": [
-        {
-          "identifier": "instant_search",
-          "type": "checkbox",
-          "description": "instant_search_description",
-          "label": "instant_search_label",
-          "value": true
-        },
-        {
-          "identifier": "scoped_kb_search",
-          "type": "checkbox",
-          "description": "scoped_knowledge_base_search_description",
-          "label": "scoped_knowledge_base_search_label",
-          "value": true
-        },
-        {
-          "identifier": "scoped_community_search",
-          "type": "checkbox",
-          "description": "scoped_community_search_description",
-          "label": "scoped_community_search_label",
-          "value": true
-        }
-      ]
-    },
-    {
-      "label": "form_group_label",
-      "variables": [
-        {
-          "identifier": "form_id_default",
-          "type": "text",
-          "description": "form_id_description",
-          "label": "form_id_label",
-          "value": "27039696134163"
         }
       ]
     },

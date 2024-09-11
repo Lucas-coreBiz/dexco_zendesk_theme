@@ -143,36 +143,6 @@ parts:
       screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
       value: "Images"
   - translation:
-      key: "txt.help_center_copenhagen_theme.homepage_background_image_description"
-      title: "Description for the homepage background image setting"
-      screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
-      value: "Hero image on the home page"
-  - translation:
-      key: "txt.help_center_copenhagen_theme.homepage_background_image_label"
-      title: "Label for the homepage background image setting"
-      screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
-      value: "Home hero image"
-  - translation:
-      key: "txt.help_center_copenhagen_theme.community_background_image_description"
-      title: "Description for the community background image setting"
-      screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
-      value: "Hero image on the community topics page"
-  - translation:
-      key: "txt.help_center_copenhagen_theme.community_background_image_label"
-      title: "Label for the community background image setting"
-      screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
-      value: "Community hero image"
-  - translation:
-      key: "txt.help_center_copenhagen_theme.community_image_description"
-      title: "Description for the community image setting"
-      screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
-      value: "Image for the community section on the home page"
-  - translation:
-      key: "txt.help_center_copenhagen_theme.community_image_label"
-      title: "Label for the community image setting"
-      screenshot: "https://zendesk.box.com/s/9kigi6qd5ufgskmqtefk0cfpgrmxn78y"
-      value: "Community banner"
-  - translation:
       key: "txt.help_center_copenhagen_theme.search_group_label"
       title: "Label for the search settings group"
       screenshot: "https://drive.google.com/open?id=1uZaNe12E-A_snTd_7AjcqirB4ROLF4bB"

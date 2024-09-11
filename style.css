@@ -671,7 +671,7 @@ ul {
   font-weight: 300;
   letter-spacing: 0.05rem;
   text-align: center;
-  color: #292728;
+  color: $deca_color_primary;
   text-decoration: underline;
   transition: all 0.3s ease;
   border: 1px solid #fff;
@@ -682,7 +682,7 @@ ul {
   }
 }
 .header-callcenter-button:hover {
-  border: 1px solid #dbc79a;
+  border: 1px solid $deca_color_secondary;
 }
 
 .skip-navigation {
@@ -1053,7 +1053,7 @@ ul {
 }
 
 .search {
-  border-bottom: 1px solid #111111;
+  border-bottom: 1px solid $text_color;
   background: white;
   display: flex;
   position: relative;
@@ -1077,7 +1077,7 @@ ul {
   flex: 1 1 auto;
   height: 40px;
   width: 100%;
-  color: $link_color;
+  color: $text_color;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -1085,7 +1085,7 @@ ul {
   letter-spacing: 0.8px;
 }
 .search input[type=search]:focus {
-  color: $link_color;
+  color: $text_color;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -1093,7 +1093,7 @@ ul {
   letter-spacing: 0.8px;
 }
 .search input[type=search]::placeholder {
-  color: $link_color;
+  color: $text_color;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -1176,7 +1176,7 @@ ul {
   z-index: 1;
   width: 24px;
   height: 24px;
-  color: #111111;
+  color: $text_color;
   pointer-events: none;
 }
 [dir=rtl] .search-icon {
@@ -1424,7 +1424,7 @@ ul {
 
 .background-block {
   height: 40px;
-  background: #dbc79a;
+  background: $deca_color_secondary;
   margin-bottom: 60px;
 }
 @media (max-width: 768px) {
@@ -1446,7 +1446,7 @@ ul {
 }
 
 .help-center-title {
-  color: $link_color;
+  color: $text_color;
   text-align: center;
   font-size: 36px;
   font-style: normal;
@@ -1543,11 +1543,10 @@ ul {
   align-items: center;
   gap: 10px;
   align-self: stretch;
-  border: 1px solid #dbc79a;
+  border: 1px solid $deca_color_secondary;
   transition: all 0.3s ease;
-  color: #111111;
+  color: $text_color;
   text-align: center;
-  font-family: $text_font;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1556,7 +1555,7 @@ ul {
 }
 
 .section-item:hover {
-  background-color: #dbc79a;
+  background-color: $deca_color_secondary;
 }
 
 .articles-container {
@@ -1574,9 +1573,8 @@ ul {
   width: 100%;
 }
 #articles-list h2 {
-  color: #111111;
+  color: $text_color;
   text-align: center;
-  font-family: $text_font;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1596,14 +1594,13 @@ ul {
 .article-item {
   cursor: pointer;
   padding: 9px 16px;
-  border-bottom: 1px solid #dbc79a;
+  border-bottom: 1px solid $deca_color_secondary;
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
-  color: #111111;
-  font-family: $text_font;
+  color: $text_color;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -1632,7 +1629,7 @@ ul {
 .accordion-icon {
   width: 24px;
   height: 24px;
-  fill: #dbc79a;
+  fill: $deca_color_secondary;
   transition: transform 0.3s ease;
 }
 
@@ -1726,15 +1723,14 @@ ul {
 
 .contact-button {
   background-color: #fff;
-  color: #292728;
-  font-family: $text_font;
+  color: $deca_color_primary;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.75px;
   text-transform: uppercase;
-  border: 1px solid #dbc79a;
+  border: 1px solid $deca_color_secondary;
   cursor: pointer;
   display: flex;
   height: 40px;
@@ -1752,7 +1748,7 @@ ul {
 }
 @media (min-width: 1024px) {
   .contact-button:hover {
-    background-color: #dbc79a;
+    background-color: $deca_color_secondary;
     text-decoration: none;
   }
 }
@@ -2729,7 +2725,7 @@ ul {
 
 /***** Community *****/
 .community-hero {
-  background-image: url($community_background_image);
+  background-image: url($background_desktop);
   margin-bottom: 10px;
 }
 .community-footer {
