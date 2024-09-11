@@ -35,6 +35,7 @@
               accordionIcon.setAttribute('viewBox', '0 0 24 24');
               accordionIcon.setAttribute('width', '24px');
               accordionIcon.setAttribute('height', '24px');
+              accordionIcon.classList.add('accordion-icon')
               accordionIcon.innerHTML = `
                 <g id="icon-seta">
                   <rect id="Rectangle 14" x="12" y="16.9706" width="1.5" height="12" transform="rotate(-135 12 16.9706)" fill="#DBC79A"/>
@@ -101,6 +102,18 @@
     sacButton.addEventListener('click', function () {
       sacInfo.style.display = sacInfo.style.display === 'none' ? 'block' : 'none';
     });
+
+    const atendimentoButton = document.querySelector('.header-callcenter-button');
+    const contactOptionsSection = document.querySelector('.contact-options');
+
+    atendimentoButton.addEventListener('click', function (e) {
+      e.preventDefault();
+        contactOptionsSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+        window.scrollBy(0, -110);
+    });
   });
 </script>
 
@@ -140,7 +153,8 @@
         {{#each categories}}
         {{#each this.sections}}
         <li class="section-item" data-section-id="{{this.id}}">
-          {{this.name}}
+          <div class="section-icon"></div>
+          <span>{{this.name}}</span>
         </li>
         {{/each}}
         {{/each}}
@@ -160,9 +174,18 @@
     <p>Nosso time pode te ajudar.</p>
   </div>
   <div class="contact-buttons">
-    <a class="contact-button" id="email-button" href="https://lojadeca.zendesk.com/hc/pt-br/requests/new?ticket_form_id={{settings.form_id_default}}" class="contact-link">E-mail</a>
-    <button class="contact-button" id="sac-button">SAC</button>
-    <a class="contact-button" id="whatsapp-button" href="https://wa.me/5511999999999" class="contact-link" target="_blank">WhatsApp</a>
+    <a class="contact-button" id="email-button" href="https://lojadeca.zendesk.com/hc/pt-br/requests/new?ticket_form_id={{settings.form_id_default}}" class="contact-link">
+      <img src={{settings.contact_icon_email}} alt="E-mail" />
+      <span>E-mail</span>
+    </a>
+    <button class="contact-button" id="sac-button">
+      <img src={{settings.contact_icon_sac}} alt="Sac" />
+      <span>SAC</span>
+    </button>
+    <a class="contact-button" id="whatsapp-button" href="https://wa.me/5511999999999" class="contact-link" target="_blank">
+      <img src={{settings.contact_icon_whatsapp}} alt="Whatsapp" />
+      <span>WhatsApp</span>
+    </a>
   </div>
   <div id="contact-content" class="contact-content">
     <div id="sac-info" style="display: none;">

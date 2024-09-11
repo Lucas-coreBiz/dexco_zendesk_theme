@@ -12,18 +12,20 @@
 }
 
 .help-center {
-  @include max-width-container;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .help-center-title {
-  color: $dexco-1;
+  color: $link_color;
   text-align: center;
-  font-family: $main-font;
   font-size: 36px;
   font-style: normal;
   font-weight: 300;
   line-height: 44px;
   letter-spacing: 1.8px;
+  margin: 0;
 }
 
 .help-center-container {
@@ -44,6 +46,30 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+}
+
+.section-item[data-section-id="32387085346195"] .section-icon {
+  background: url($knowledge_icon_troca);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.section-item[data-section-id="32387120658323"] .section-icon {
+  background: url($knowledge_icon_entrega);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.section-item[data-section-id="32387064971411"] .section-icon {
+  background: url($knowledge_icon_compras);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .section-item {
@@ -210,7 +236,7 @@
   align-items: center;
   gap: 10px;
   transition: background-color 0.3s ease;
-
+  min-width: 217px;
 }
 
 .contact-button:hover {

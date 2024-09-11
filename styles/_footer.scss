@@ -1,12 +1,13 @@
 /***** Footer *****/
 .footer {
   background-color: $deca_color_primary;
-  margin-top: 60px;
   padding: 80px 0
 }
 
 .footer-container {
-  @include max-width-container;
+  width: 100%;
+  max-width: 1267px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 97px;
@@ -14,8 +15,8 @@
 
 .footer-sections {
   display: flex;
-  justify-content: space-between;
   gap: 150px;
+  width: 100%;
 }
 
 .footer-socials {
@@ -30,6 +31,7 @@
   display: flex;
   justify-content: space-between;
   gap: 150px;
+  width: 100%;
 }
 
 .footer-section-column {

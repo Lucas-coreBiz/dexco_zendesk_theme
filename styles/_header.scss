@@ -47,6 +47,7 @@ $header-height: 71px;
   color: $deca-1;
   text-decoration: underline;
   transition: all 0.3s ease;
+  border: 1px solid #fff;
   
   @include desktop {
     padding: 9px 33px;

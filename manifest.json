@@ -1,7 +1,7 @@
 {
   "name": "LojaDeca",
   "author": "LojaDeca",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -295,6 +295,52 @@
           "type": "file",
           "description": "background_mobile_description",
           "label": "background_mobile_label"
+        }
+      ]
+    },
+    {
+      "label": "knowledge_icons_label",
+      "variables": [
+        {
+          "identifier": "knowledge_icon_troca",
+          "type": "file",
+          "description": "knowledge_icon_troca_description",
+          "label": "knowledge_icon_troca_label"
+        },
+        {
+          "identifier": "knowledge_icon_entrega",
+          "type": "file",
+          "description": "knowledge_icon_entrega_description",
+          "label": "knowledge_icon_entrega_label"
+        },
+        {
+          "identifier": "knowledge_icon_compras",
+          "type": "file",
+          "description": "knowledge_icon_compras_description",
+          "label": "knowledge_icon_compras_label"
+        }
+      ]
+    },
+    {
+      "label": "contact_icons_label",
+      "variables": [
+        {
+          "identifier": "contact_icon_email",
+          "type": "file",
+          "description": "contact_icon_email_description",
+          "label": "contact_icon_email_label"
+        },
+        {
+          "identifier": "contact_icon_sac",
+          "type": "file",
+          "description": "contact_icon_sac_description",
+          "label": "contact_icon_sac_label"
+        },
+        {
+          "identifier": "contact_icon_whatsapp",
+          "type": "file",
+          "description": "contact_icon_whatsapp_description",
+          "label": "contact_icon_whatsapp_label"
         }
       ]
     },
