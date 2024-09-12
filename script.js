@@ -658,11 +658,23 @@
     }
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", async function () {
     const sectionItems = document.querySelectorAll(".section-item");
     const articlesList = document.getElementById("articles-list");
     const sectionTitle = document.createElement("h2");
     const sectionSelect = document.getElementById("section-select");
+
+    // Obter o token CSRF
+    let csrfToken = "";
+    try {
+      const csrfResponse = await fetch(
+        "https://lojadeca.zendesk.com/hc/api/internal/csrf_token.json"
+      );
+      const csrfData = await csrfResponse.json();
+      csrfToken = csrfData.current_session.csrf_token;
+    } catch (error) {
+      console.error("Erro ao obter o token CSRF:", error);
+    }
 
     async function loadArticles(sectionId, sectionName) {
       sectionTitle.textContent = sectionName;
@@ -681,7 +693,12 @@
 
       try {
         const response = await fetch(
-          `https://lojadeca.zendesk.com/api/v2/help_center/sections/${sectionId}/articles.json`
+          `https://lojadeca.zendesk.com/api/v2/help_center/sections/${sectionId}/articles.json`,
+          {
+            headers: {
+              "X-CSRF-Token": csrfToken,
+            },
+          }
         );
         const data = await response.json();
         const articles = data.articles;
@@ -726,12 +743,63 @@
               if (articleBody.innerHTML === "") {
                 try {
                   const articleResponse = await fetch(
-                    `https://lojadeca.zendesk.com/api/v2/help_center/articles/${article.id}.json`
+                    `https://lojadeca.zendesk.com/api/v2/help_center/articles/${article.id}.json`,
+                    {
+                      headers: {
+                        "X-CSRF-Token": csrfToken,
+                      },
+                    }
                   );
                   const articleData = await articleResponse.json();
-                  articleBody.innerHTML = `<div>${articleData.article.body}</div>`;
+                  articleBody.innerHTML = `
+                  <div>${articleData.article.body}</div>
+                  <div class="articles-footer">
+                    <div class="articles-footer-container">
+                      <span class="articles-votes-question">Esse artigo foi útil?</span>
+                      <div class="articles-votes-controls" role="group" aria-labelledby="article-votes-label">
+                        <button type="button" class="articles-vote articles-vote-up" data-helper="vote" data-item="article" data-type="up" data-id="${article.id}" aria-label="O artigo foi útil" aria-pressed="false">
+                          <span class"visibility-hidden">Sim</span>
+                        </button>
+                        <button type="button" class="articles-vote articles-vote-down" data-helper="vote" data-item="article" data-type="down" data-id="${article.id}" aria-label="O artigo não foi útil" aria-pressed="false">
+                          <span>Não</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                `;
                   articleBody.style.display = "block";
                   articleItem.classList.add("open");
+
+                  const voteButtons =
+                    articleBody.querySelectorAll(".articles-vote");
+                  voteButtons.forEach((button) => {
+                    button.addEventListener("click", async function () {
+                      const voteType = this.dataset.type;
+                      const articleId = this.dataset.id;
+                      try {
+                        const response = await fetch(
+                          `https://lojadeca.zendesk.com/hc/pt-br/articles/${articleId}/vote`,
+                          {
+                            method: "POST",
+                            headers: {
+                              "Content-Type": "application/json",
+                              "X-CSRF-Token": csrfToken,
+                            },
+                            body: JSON.stringify({ value: voteType }),
+                          }
+                        );
+                        if (response.ok) {
+                          const data = await response.json();
+                          console.log(data);
+                          this.setAttribute("aria-pressed", "true");
+                          this.classList.add("voted");
+                          voteButtons.forEach((btn) => (btn.disabled = true));
+                        }
+                      } catch (error) {
+                        console.error("Erro ao votar:", error);
+                      }
+                    });
+                  });
                 } catch (error) {
                   console.error("Erro ao carregar o artigo:", error);
                   articleBody.innerHTML =

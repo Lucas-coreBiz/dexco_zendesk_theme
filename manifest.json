@@ -1,7 +1,7 @@
 {
   "name": "LojaDeca",
   "author": "LojaDeca",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -326,6 +326,18 @@
           "type": "file",
           "description": "knowledge_icon_compras_description",
           "label": "knowledge_icon_compras_label"
+        },
+        {
+          "identifier": "vote_up_icon",
+          "type": "file",
+          "description": "vote_up_icon_description",
+          "label": "vote_up_icon_label"
+        },
+        {
+          "identifier": "vote_down_icon",
+          "type": "file",
+          "description": "vote_down_icon_description",
+          "label": "vote_down_icon_label"
         }
       ]
     },
