@@ -1,7 +1,7 @@
 {
   "name": "LojaDeca",
   "author": "LojaDeca",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -309,6 +309,18 @@
     {
       "label": "knowledge_icons_label",
       "variables": [
+        {
+          "identifier": "knowledge_icon_termos",
+          "type": "file",
+          "description": "knowledge_icon_termos_description",
+          "label": "knowledge_icon_termos_label"
+        },
+        {
+          "identifier": "knowledge_icon_garantia",
+          "type": "file",
+          "description": "knowledge_icon_garantia_description",
+          "label": "knowledge_icon_garantia_label"
+        },
         {
           "identifier": "knowledge_icon_troca",
           "type": "file",
