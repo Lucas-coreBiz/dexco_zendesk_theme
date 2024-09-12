@@ -1707,6 +1707,7 @@ ul {
 
 .accordion-icon {
   width: 24px;
+  min-width: 24px;
   height: 24px;
   fill: $deca_color_secondary;
   transition: transform 0.3s ease;
