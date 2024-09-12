@@ -1661,6 +1661,7 @@ ul {
   outline: none;
   cursor: pointer;
   background: transparent;
+  padding: 0;
 }
 .articles-vote span {
   border: 0;
