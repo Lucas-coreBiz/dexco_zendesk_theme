@@ -773,6 +773,7 @@
                   const voteButtons =
                     articleBody.querySelectorAll(".articles-vote");
                   voteButtons.forEach((button) => {
+                    button.style.opacity = "1";
                     button.addEventListener("click", async function () {
                       const voteType = this.dataset.type;
                       const articleId = this.dataset.id;
@@ -789,11 +790,14 @@
                           }
                         );
                         if (response.ok) {
-                          const data = await response.json();
-                          console.log(data);
                           this.setAttribute("aria-pressed", "true");
                           this.classList.add("voted");
-                          voteButtons.forEach((btn) => (btn.disabled = true));
+                          voteButtons.forEach((btn) => {
+                            if (btn !== this) {
+                              btn.style.opacity = "0.3";
+                            }
+                            btn.disabled = true;
+                          });
                         }
                       } catch (error) {
                         console.error("Erro ao votar:", error);
