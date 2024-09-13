@@ -203,6 +203,11 @@ document.addEventListener("DOMContentLoaded", async function () {
       behavior: "smooth",
       block: "start",
     });
-    window.scrollBy(0, -110);
+
+    setTimeout(() => {
+      const headerHeight = document.querySelector(".header").offsetHeight;
+
+      window.scrollBy(0, -headerHeight);
+    }, 500);
   });
 });
