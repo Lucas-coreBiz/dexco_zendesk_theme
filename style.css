@@ -680,9 +680,9 @@ ul {
   .header-callcenter-button {
     padding: 9px 33px;
   }
-}
-.header-callcenter-button:hover {
-  border: 1px solid $deca_color_secondary;
+  .header-callcenter-button:hover {
+    border: 1px solid $deca_color_secondary;
+  }
 }
 
 .skip-navigation {

@@ -51,10 +51,10 @@ $header-height: 71px;
   
   @include desktop {
     padding: 9px 33px;
-  }
-
-  &:hover {
-    border: 1px solid $deca_color_secondary;
+    
+    &:hover {
+      border: 1px solid $deca_color_secondary;
+    }
   }
 }
 
