@@ -67,6 +67,11 @@
     padding: 10px 15px;
     border: 1px solid $deca_color_secondary;
     background: transparent;
+    color: $deca_color_primary;
+
+    option {
+      color: $deca_color_primary;
+    }
   }
 }
 

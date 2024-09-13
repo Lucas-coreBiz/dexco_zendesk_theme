@@ -198,8 +198,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const atendimentoButton = document.querySelector(".header-callcenter-button");
   const contactOptionsSection = document.querySelector(".contact-options");
 
-  atendimentoButton.addEventListener("click", function (e) {
-    e.preventDefault();
+  atendimentoButton.addEventListener("click", function () {
     contactOptionsSection.scrollIntoView({
       behavior: "smooth",
       block: "start",

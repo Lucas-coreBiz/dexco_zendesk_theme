@@ -48,6 +48,9 @@ $header-height: 71px;
   text-decoration: underline;
   transition: all 0.3s ease;
   border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
   
   @include desktop {
     padding: 9px 33px;

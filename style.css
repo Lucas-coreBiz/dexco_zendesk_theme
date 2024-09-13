@@ -675,6 +675,9 @@ ul {
   text-decoration: underline;
   transition: all 0.3s ease;
   border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
 }
 @media (min-width: 1024px) {
   .header-callcenter-button {
@@ -1497,6 +1500,10 @@ ul {
     padding: 10px 15px;
     border: 1px solid $deca_color_secondary;
     background: transparent;
+    color: $deca_color_primary;
+  }
+  #section-select option {
+    color: $deca_color_primary;
   }
 }
 
