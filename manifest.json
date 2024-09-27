@@ -1,7 +1,7 @@
 {
   "name": "LojaDeca",
   "author": "LojaDeca",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -354,6 +354,30 @@
       ]
     },
     {
+      "label": "informative_banner_label",
+      "variables": [
+        {
+          "identifier": "show_informative_banner",
+          "type": "checkbox",
+          "description": "show_informative_banner_description",
+          "label": "show_informative_banner_label",
+          "value": true
+        },
+        {
+          "identifier": "informative_banner_desktop",
+          "type": "file",
+          "description": "informative_banner_desktop_description",
+          "label": "informative_banner_desktop_label"
+        },
+        {
+          "identifier": "informative_banner_mobile",
+          "type": "file",
+          "description": "informative_banner_mobile_description",
+          "label": "informative_banner_mobile_label"
+        }
+      ]
+    },
+    {
       "label": "contact_icons_label",
       "variables": [
         {
@@ -374,7 +398,7 @@
           "type": "text",
           "description": "contact_chat_link_description",
           "label": "contact_chat_link_label",
-          "value": "https://chat-app.meudroz.com/#/fullscreen/talk"
+          "value": "https://chat-app.meudroz.com/#/fullscreen?token=dG9rZW49NzBlODgxNmQzNWUyOTE1MDZiZjllYmVkOTJkODZjOTZjMmZkYTYzOCZzaW11bGF0ZT1mYWxzZQ"
         },
         {
           "identifier": "show_email",

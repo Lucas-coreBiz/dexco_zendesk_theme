@@ -54,6 +54,15 @@
   </div>
 </section>
 
+<section class="informative-banner">
+  <div class="informative-banner-container">
+    {{#if settings.show_informative_banner}}
+      <img src="{{settings.informative_banner_desktop}}" alt="Banner informativo" class="informative-banner-desktop" />
+      <img src="{{settings.informative_banner_mobile}}" alt="Banner informativo" class="informative-banner-mobile" />
+    {{/if}}
+  </div>
+</section>
+
 <section class="contact-options" id="contact-options">
   <div class="contact-titles">
     <h3>Não encontrou o que precisava?</h3>
@@ -66,19 +75,19 @@
         <span>E-mail</span>
       </a>
     {{/if}}
-    {{#if settings.show_email}}
-      <a class="contact-button" id="chat-button" href="{{settings.contact_chat_link}}" class="contact-link"></a>
+    {{#if settings.show_chat}}
+      <a class="contact-button" id="chat-button" href="{{settings.contact_chat_link}}" target="_blank" rel="noopener noreferrer" class="contact-link">
         <img src={{settings.contact_icon_email}} alt="Chat" />
         <span>Chat</span>
       </a>
     {{/if}}
-    {{#if settings.show_email}}
+    {{#if settings.show_sac}}
       <button class="contact-button" id="sac-button">
         <img src={{settings.contact_icon_sac}} alt="Sac" />
         <span>SAC</span>
       </button>
     {{/if}}
-    {{#if settings.show_email}}
+    {{#if settings.show_whatsapp}}
       <a class="contact-button" id="whatsapp-button" href="{{settings.contact_whatsapp_link}}" class="contact-link" target="_blank" rel="noopener noreferrer">
         <img src={{settings.contact_icon_whatsapp}} alt="Whatsapp" />
         <span>WhatsApp</span>
