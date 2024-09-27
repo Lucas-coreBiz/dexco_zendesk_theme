@@ -668,7 +668,7 @@
     let csrfToken = "";
     try {
       const csrfResponse = await fetch(
-        "https://lojadeca.zendesk.com/hc/api/internal/csrf_token.json"
+        "https://ajuda.decaloja.com.br/hc/api/internal/csrf_token.json"
       );
       const csrfData = await csrfResponse.json();
       csrfToken = csrfData.current_session.csrf_token;
@@ -693,7 +693,7 @@
 
       try {
         const response = await fetch(
-          `https://lojadeca.zendesk.com/api/v2/help_center/sections/${sectionId}/articles.json`,
+          `https://ajuda.decaloja.com.br/api/v2/help_center/sections/${sectionId}/articles.json`,
           {
             headers: {
               "X-CSRF-Token": csrfToken,
@@ -743,7 +743,7 @@
               if (articleBody.innerHTML === "") {
                 try {
                   const articleResponse = await fetch(
-                    `https://lojadeca.zendesk.com/api/v2/help_center/articles/${article.id}.json`,
+                    `https://ajuda.decaloja.com.br/api/v2/help_center/articles/${article.id}.json`,
                     {
                       headers: {
                         "X-CSRF-Token": csrfToken,
@@ -779,7 +779,7 @@
                       const articleId = this.dataset.id;
                       try {
                         const response = await fetch(
-                          `https://lojadeca.zendesk.com/hc/pt-br/articles/${articleId}/vote`,
+                          `https://ajuda.decaloja.com.br/hc/pt-br/articles/${articleId}/vote`,
                           {
                             method: "POST",
                             headers: {

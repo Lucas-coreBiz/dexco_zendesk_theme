@@ -1,7 +1,7 @@
 {
   "name": "LojaDeca",
   "author": "LojaDeca",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -357,10 +357,44 @@
       "label": "contact_icons_label",
       "variables": [
         {
+          "identifier": "show_chat",
+          "type": "checkbox",
+          "description": "show_chat_description",
+          "label": "show_chat_label",
+          "value": true
+        },
+        {
+          "identifier": "contact_icon_chat",
+          "type": "file",
+          "description": "contact_icon_chat_description",
+          "label": "contact_icon_chat_label"
+        },
+        {
+          "identifier": "contact_chat_link",
+          "type": "text",
+          "description": "contact_chat_link_description",
+          "label": "contact_chat_link_label",
+          "value": "https://chat-app.meudroz.com/#/fullscreen/talk"
+        },
+        {
+          "identifier": "show_email",
+          "type": "checkbox",
+          "description": "show_email_description",
+          "label": "show_email_label",
+          "value": false
+        },
+        {
           "identifier": "contact_icon_email",
           "type": "file",
           "description": "contact_icon_email_description",
           "label": "contact_icon_email_label"
+        },
+        {
+          "identifier": "show_sac",
+          "type": "checkbox",
+          "description": "show_sac_description",
+          "label": "show_sac_label",
+          "value": true
         },
         {
           "identifier": "contact_icon_sac",
@@ -369,10 +403,24 @@
           "label": "contact_icon_sac_label"
         },
         {
+          "identifier": "show_whatsapp",
+          "type": "checkbox",
+          "description": "show_whatsapp_description",
+          "label": "show_whatsapp_label",
+          "value": true
+        },
+        {
           "identifier": "contact_icon_whatsapp",
           "type": "file",
           "description": "contact_icon_whatsapp_description",
           "label": "contact_icon_whatsapp_label"
+        },
+        {
+          "identifier": "contact_whatsapp_link",
+          "type": "text",
+          "description": "contact_whatsapp_link_description",
+          "label": "contact_whatsapp_link_label",
+          "value": "https://api.whatsapp.com/send?phone=5511995044983&text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Loja%20Deca%2C%20pode%20me%20ajudar%3F"
         }
       ]
     },

@@ -60,18 +60,30 @@
     <p>Nosso time pode te ajudar.</p>
   </div>
   <div class="contact-buttons">
-    <a class="contact-button" id="email-button" href="https://lojadeca.zendesk.com/hc/pt-br/requests/new?ticket_form_id={{settings.form_id_default}}" class="contact-link">
-      <img src={{settings.contact_icon_email}} alt="E-mail" />
-      <span>E-mail</span>
-    </a>
-    <button class="contact-button" id="sac-button">
-      <img src={{settings.contact_icon_sac}} alt="Sac" />
-      <span>SAC</span>
-    </button>
-    <a class="contact-button" id="whatsapp-button" href="https://api.whatsapp.com/send?phone=5511995044983&text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Loja%20Deca%2C%20pode%20me%20ajudar%3F" class="contact-link" target="_blank" rel="noopener noreferrer">
-      <img src={{settings.contact_icon_whatsapp}} alt="Whatsapp" />
-      <span>WhatsApp</span>
-    </a>
+    {{#if settings.show_email}}
+      <a class="contact-button" id="email-button" href="https://ajuda.decaloja.com.br/hc/pt-br/requests/new?ticket_form_id={{settings.form_id_default}}" class="contact-link">
+        <img src={{settings.contact_icon_email}} alt="E-mail" />
+        <span>E-mail</span>
+      </a>
+    {{/if}}
+    {{#if settings.show_email}}
+      <a class="contact-button" id="chat-button" href="{{settings.contact_chat_link}}" class="contact-link"></a>
+        <img src={{settings.contact_icon_email}} alt="Chat" />
+        <span>Chat</span>
+      </a>
+    {{/if}}
+    {{#if settings.show_email}}
+      <button class="contact-button" id="sac-button">
+        <img src={{settings.contact_icon_sac}} alt="Sac" />
+        <span>SAC</span>
+      </button>
+    {{/if}}
+    {{#if settings.show_email}}
+      <a class="contact-button" id="whatsapp-button" href="{{settings.contact_whatsapp_link}}" class="contact-link" target="_blank" rel="noopener noreferrer">
+        <img src={{settings.contact_icon_whatsapp}} alt="Whatsapp" />
+        <span>WhatsApp</span>
+      </a>
+    {{/if}}
   </div>
   <div id="contact-content" class="contact-content">
     <div id="sac-info" style="display: none;">
