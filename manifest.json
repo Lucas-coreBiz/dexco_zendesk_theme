@@ -1,7 +1,7 @@
 {
   "name": "LojaDeca",
   "author": "LojaDeca",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -457,6 +457,25 @@
           "description": "form_id_description",
           "label": "form_id_label",
           "value": "27039696134163"
+        }
+      ]
+    },
+    {
+      "label": "footer_help_label",
+      "variables": [
+        {
+          "identifier": "link_help_center",
+          "type": "text",
+          "description": "link_help_center_description",
+          "label": "link_help_center_label",
+          "value": "/"
+        },
+        {
+          "identifier": "text_help_center",
+          "type": "text",
+          "description": "text_help_center_description",
+          "label": "text_help_center_label",
+          "value": "Central de ajuda"
         }
       ]
     },
