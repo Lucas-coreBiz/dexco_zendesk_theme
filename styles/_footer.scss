@@ -135,13 +135,20 @@
 
 .footer-brand {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 
   @include mobile {
     flex-direction: column;
+  }
+}
+
+.footer-brand-container {
+  img {
+    max-width: 97px;
+    max-height: 25px;
   }
 }
 
