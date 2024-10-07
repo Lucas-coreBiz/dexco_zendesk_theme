@@ -944,7 +944,7 @@ ul {
 
 .footer-brand {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
@@ -955,6 +955,9 @@ ul {
   }
 }
 
+.footer-brand-container {
+  max-height: 25px;
+}
 .footer-brand-container img {
   max-width: 97px;
   max-height: 25px;
