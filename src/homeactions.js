@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   let csrfToken = "";
   try {
     const csrfResponse = await fetch(
-      "https://ajuda.casadexco.com.br/hc/api/internal/csrf_token.json"
+      "https://casadexco.zendesk.com/hc/api/internal/csrf_token.json"
     );
     const csrfData = await csrfResponse.json();
     csrfToken = csrfData.current_session.csrf_token;
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     try {
       const response = await fetch(
-        `https://ajuda.casadexco.com.br/api/v2/help_center/sections/${sectionId}/articles.json`,
+        `https://casadexco.zendesk.com/api/v2/help_center/sections/${sectionId}/articles.json`,
         {
           headers: {
             "X-CSRF-Token": csrfToken,
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", async function () {
           accordionIcon.setAttribute("class", "accordion-icon");
           accordionIcon.innerHTML = `
               <g id="icon-seta">
-                <rect id="Rectangle 14" x="12" y="16.9706" width="1.5" height="12" transform="rotate(-135 12 16.9706)" fill="#DBC79A"/>
-                <rect id="Rectangle 15" x="3.51465" y="8.48523" width="1.5" height="12" transform="rotate(-45 3.51465 8.48523)" fill="#DBC79A"/>
+                <rect id="Rectangle 14" x="12" y="16.9706" width="1.5" height="12" transform="rotate(-135 12 16.9706)" fill="#0000004D"/>
+                <rect id="Rectangle 15" x="3.51465" y="8.48523" width="1.5" height="12" transform="rotate(-45 3.51465 8.48523)" fill="#0000004D"/>
               </g>
             `;
 
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             if (articleBody.innerHTML === "") {
               try {
                 const articleResponse = await fetch(
-                  `https://ajuda.casadexco.com.br/api/v2/help_center/articles/${article.id}.json`,
+                  `https://casadexco.zendesk.com/api/v2/help_center/articles/${article.id}.json`,
                   {
                     headers: {
                       "X-CSRF-Token": csrfToken,
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     const articleId = this.dataset.id;
                     try {
                       const response = await fetch(
-                        `https://ajuda.casadexco.com.br/hc/pt-br/articles/${articleId}/vote`,
+                        `https://casadexco.zendesk.com/hc/pt-br/articles/${articleId}/vote`,
                         {
                           method: "POST",
                           headers: {
