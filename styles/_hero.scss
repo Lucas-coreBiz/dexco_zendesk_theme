@@ -3,66 +3,102 @@
   background-image: url($background_desktop);
   background-position: center;
   background-size: cover;
-  height: 420px;
+  height: 480px;
   text-align: center;
   width: 100%;
-  
-  @include mobile {
-    height: 358px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 720px) {
     background-image: url($background_mobile);
+    height: 482px;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 526px;
   }
 
   &-inner {
-    @include vertical-align;
-    max-width: 610px;
+    position: absolute;
+    bottom: 60px;
     margin: 0 auto;
+    padding: 0 0;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    @include mobile {
-      max-width: 90%;
+    @media screen and (max-width: 1480px) {
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 720px) {
+      padding: 0 32px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 0 20px;
+      bottom: 40px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      max-width: 1440px;
     }
   }
 }
 
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-}
-
 .hero-title {
+  font-family: 'IvyPresto Headline';
   margin: 0;
-  color: $deca_color_secondary;
-  text-align: center;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-  
-  @include mobile {
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 1.5px;
+  color: #fff;
+  text-align: left;
+  font-size: 90px;
+  font-style: light;
+  font-weight: 300;
+  line-height: 91.1px;
+  letter-spacing: 2.87px;
+  padding: 22px 0;
+
+  @media screen and (max-width: 720px) {
+    font-size: 72px;
+    line-height: 73px;
+    letter-spacing: 2.87px;
+    padding: 13px 0;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 61px;
+    line-height: 73px;
+    letter-spacing: 2.87px;
   }
 }
 
 .hero-subtitle {
-  margin: 0;
-  color: #F5F5F5;
-  text-align: center;
-  font-size: 30px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 34px;
-  letter-spacing: 1.5px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  font-style: light;
+  line-height: 25px;
+  letter-spacing: 1px;
 
-  @include mobile {
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.9px;
+  @media screen and (max-width: 720px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   strong {

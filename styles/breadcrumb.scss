@@ -1,0 +1,38 @@
+.breadcrumb {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 0;
+
+  @media screen and (max-width: 1480px) {
+    padding: 14px 20px;
+  }
+
+  .breadcrumb-link {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: light;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: #000;
+  }
+  
+  .breadcrumb-separator {
+    width: 10px;
+    height: 1px;
+    background: #000;
+  }
+  
+  .breadcrumb-current {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: light;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: #000;
+  }
+}

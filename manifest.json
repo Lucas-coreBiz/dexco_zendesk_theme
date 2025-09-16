@@ -1,6 +1,6 @@
 {
-  "name": "LojaDeca",
-  "author": "LojaDeca",
+  "name": "casadexco",
+  "author": "casadexco",
   "version": "1.0.27",
   "api_version": 4,
   "default_locale": "pt-br",
@@ -156,6 +156,10 @@
             {
               "label": "Roboto",
               "value": "'Roboto', sans-serif"
+            },
+            {
+              "label": "IvyPresto",
+              "value": "'IvyPresto Headline', serif"
             }
           ],
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"

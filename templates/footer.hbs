@@ -1,109 +1,360 @@
 <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-sections">
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/DecaOficial/" target="_blank" rel="noopener noreferrer">
-          <img src="{{settings.instagram_icon}}" alt="Instagram" />
-          <span class="visibility-hidden">Instagram</span>
-        </a>
-        <a href="https://www.facebook.com/DecaOficial" target="_blank" rel="noopener noreferrer">
-          <img src="{{settings.facebook_icon}}" alt="Facebook" />
-           <span class="visibility-hidden">Facebook</span>
-        </a>
-        <a href="https://www.youtube.com/user/CanalDeca" target="_blank" rel="noopener noreferrer">
-          <img src="{{settings.youtube_icon}}" alt="YouTube" />
-           <span class="visibility-hidden">Youtube</span>
-        </a>
-        <a href="https://br.pinterest.com/decaoficial/" target="_blank" rel="noopener noreferrer">
-          <img src="{{settings.pinterest_icon}}" alt="Pinterest" />
-           <span class="visibility-hidden">Pinterest</span>
-        </a>
+  <div class="newsletter-container">
+    <img src="https://dexcoprod2.vteximg.com.br/arquivos/5efdeda89087434381a0a7d9735464eb24ce3760.jpg"
+         alt="Mulher ruiva olhando pro lado sorrindo, usando camisa jeans. Planta ao fundo."
+         class="newsletter-image" />
+    <div class="newsletter-content-container">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Fique por dentro das novidades e promoções</h2>
+        <p class="newsletter-subtitle">Ao se cadastrar você concorda em receber e-mails promocionais e novidades. Saiba
+          mais na nossa <a target="_blank"
+             href="https://ajuda.casadexco.com.br/hc/pt-br/articles/37155021411219-Aviso-de-Privacidade?_gl=1%2A1nvjpti%2A_gcl_aw%2AR0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.%2A_gcl_au%2AMTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+             rel="noopener">Politica de Privacidade</a></p>
       </div>
-      <div class="footer-section-links">
-         <div class="footer-section-column mobile">
-          <div class="footer-card">
-             <h4>Atendimento</h4>
-            <div class="footer-link">
-              <a href="{{settings.link_help_center}}">{{settings.text_help_center}}</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-section-column">
-          <div class="footer-card">
-            <h4>Institucional</h4>
-            <div class="footer-link">
-              <a href="https://www.decaloja.com.br/institucional/quem-somos" target="_blank" rel="noopener noreferrer">Quem Somos</a>
-            </div>
-          </div>
-           <div class="footer-card">
-            <h4>Conta</h4>
-             <div class="footer-link">
-              <a href="https://www.decaloja.com.br/account" target="_blank" rel="noopener noreferrer">Minha conta</a>
-              <a href="https://www.decaloja.com.br/account#/orders" target="_blank" rel="noopener noreferrer">Meus pedidos</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-section-column">
-          <div class="footer-card">
-            <h4>Links úteis</h4>
-            <div class="footer-link">
-              <a href="https://www.decaloja.com.br/institucional/politica-de-entrega" target="_blank" rel="noopener noreferrer">Política de Entrega</a>
-              <a href="https://privacy-central.securiti.ai/#/dsr/aa0cddb5-9d17-4e58-9686-94d48fa52020" target="_blank" rel="noopener noreferrer">Portal de Atendimento aos Titulares</a>
-              <a href="https://www.decaloja.com.br/institucional/politica-de-privacidade" target="_blank" rel="noopener noreferrer">Privacidade e proteção de dados</a>
-              <a href="https://www.decaloja.com.br/institucional/politica-de-pagamento" target="_blank" rel="noopener noreferrer">Política de Pagamento</a>
-              <a href="https://www.decaloja.com.br/institucional/politica-de-troca-e-devolucao" target="_blank" rel="noopener noreferrer">Política de Devolução</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-section-column last">
-          <div class="footer-card">
-             <h4>Atendimento</h4>
-              <div class="footer-link">
-                <a href="{{settings.link_help_center}}">{{settings.text_help_center}}</a>
-            </div>
-          </div>
-        </div>
+      <div class="newsletter-form">
+        <form class="newsletter-form-container"
+              id="newsletter-form">
+          <input type="text"
+                 name="name"
+                 id="newsletter-name"
+                 placeholder="Nome" />
+          <input type="email"
+                 name="email"
+                 placeholder="E-mail (obrigatorio)"
+                 id="newsletter-email"
+                 required />
+          <button type="submit">QUERO RECEBER NOVIDADES</button>
+        </form>
       </div>
     </div>
+  </div>
 
+  <div class="footer-container">
     <div class="footer-brands">
       <div class="footer-brand-dexco">
-        <img src="{{settings.dexco_icon}}" alt="Dexco" />
+        <img src="{{settings.dexco_icon}}"
+             alt="Dexco" />
       </div>
       <div class="footer-brand">
         <div class="footer-brand-container">
-          <img src="{{settings.deca_icon}}" alt="Deca" />
+          <img src="{{settings.deca_icon}}"
+               alt="Deca" />
         </div>
-        <div class="footer-brand-container"><img src="{{settings.portinari_icon}}" alt="Portinari" /></div>
-        <div class="footer-brand-container"><img src="{{settings.hydra_icon}}" alt="Hydra" /></div>
-        <div class="footer-brand-container"><img src="{{settings.duratex_icon}}" alt="Duratex" /></div>
-        <div class="footer-brand-container"><img src="{{settings.castelatto_icon}}" alt="Castelatto" /></div>
-        <div class="footer-brand-container"><img src="{{settings.ceusa_icon}}" alt="Ceusa" /></div>
-        <div class="footer-brand-container"><img src="{{settings.durafloor_icon}}" alt="Durafloor" /></div>
+        <div class="footer-brand-container"><img src="{{settings.portinari_icon}}"
+               alt="Portinari" /></div>
+        <div class="footer-brand-container"><img src="{{settings.hydra_icon}}"
+               alt="Hydra" /></div>
+        <div class="footer-brand-container"><img src="{{settings.duratex_icon}}"
+               alt="Duratex" /></div>
+        <div class="footer-brand-container"><img src="{{settings.castelatto_icon}}"
+               alt="Castelatto" /></div>
+        <div class="footer-brand-container"><img src="{{settings.ceusa_icon}}"
+               alt="Ceusa" /></div>
+        <div class="footer-brand-container"><img src="{{settings.durafloor_icon}}"
+               alt="Durafloor" /></div>
+      </div>
+    </div>
+    <div class="footer-sections">
+      <div class="footer-sections-row-top footer-sections-row">
+        <nav class="row-container">
+          <div class="links-columns">
+            <h3 class="dexcoprod2-store-2-x-footer-title"><span>Links úteis</span></h3>
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a
+                   href="https://ajuda.casadexco.com.br/hc/pt-br/articles/37154934361875-Qual-%C3%A9-a-pol%C3%ADtica-de-entrega?_gl=1*njp9y9*_gcl_aw*R0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.*_gcl_au*MTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+                   title="Política de Entrega"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Política de Entrega</a></li>
+              <li><a
+                   href="https://ajuda.casadexco.com.br/hc/pt-br/articles/37155081882643-Qual-%C3%A9-a-pol%C3%ADtica-de-troca-e-devolu%C3%A7%C3%A3o?_gl=1*1nvjpti*_gcl_aw*R0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.*_gcl_au*MTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+                   title="Política de Troca, Devolução"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Política de Troca,
+                  Devolução</a></li>
+              <li><a
+                   href="https://ajuda.casadexco.com.br/hc/pt-br/articles/37154971808787-Qual-%C3%A9-a-pol%C3%ADtica-de-pagamento?_gl=1*1nvjpti*_gcl_aw*R0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.*_gcl_au*MTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+                   title="Política de Pagamento"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Política de Pagamento</a>
+              </li>
+              <li><a
+                   href="https://ajuda.casadexco.com.br/hc/pt-br/articles/37155072884627-Qual-%C3%A9-a-pol%C3%ADtica-de-promo%C3%A7%C3%B5es?_gl=1*1nvjpti*_gcl_aw*R0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.*_gcl_au*MTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+                   title="Política de Promoções"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Política de Promoções</a>
+              </li>
+              <li><a
+                   href="https://ajuda.casadexco.com.br/hc/pt-br/articles/37155021411219-Qual-%C3%A9-a-pol%C3%ADtica-de-privacidade-de-dados?_gl=1*1nvjpti*_gcl_aw*R0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.*_gcl_au*MTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+                   title="Aviso de Privacidade"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Aviso de Privacidade</a></li>
+              <li><a href="https://privacy-central.securiti.ai/#/dsr/aa0cddb5-9d17-4e58-9686-94d48fa52020"
+                   title="Portal de Atendimento aos Titulares"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Portal de Atendimento aos
+                  Titulares</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <h3 class="dexcoprod2-store-2-x-footer-title"><span>Atendimento</span></h3>
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a
+                   href="http://ajuda.casadexco.com.br/?_gl=1*2crzt6*_gcl_aw*R0NMLjE3NDk1ODY1ODUuQ2owS0NRandqSnJDQmhDWEFSSXNBSTV4NjZVRnR6REJJd043a3dLdWxNQlBwR0xkcURJQWkzbjFJemI0eWU4dGN4ZWJaZDNyc1h1bFBHb2FBbk1YRUFMd193Y0I.*_gcl_au*MTIyNjk4MTA5Mi4xNzU2MTI3NDUx"
+                   title="Central de ajuda"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Central de ajuda</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <h3 class="dexcoprod2-store-2-x-footer-title"><span>Institucional</span></h3>
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a href="/quem-somos"
+                   title="Quem somos"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Quem somos</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <h3 class="dexcoprod2-store-2-x-footer-title"><span>Conta</span></h3>
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a href="/account"
+                   title="Minha Conta"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Minha Conta</a></li>
+              <li><a href="/account#/orders"
+                   title="Meus Pedidos"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Meus Pedidos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-sections">
+      <div class="footer-sections-row-bottom footer-sections-row">
+        <div class="footer-section-title-container">
+          <h3 class="footer-section-title"><span>Principais categorias</span></h3>
+        </div>
+        <nav class="row-container"
+             style="height: 100%;">
+
+          <div class="links-columns">
+
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a href="/pisos-e-revestimentos"
+                   title="Pisos e Revestimentos"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link  dexcoprod2-store-2-x-strong link">Pisos
+                  e Revestimentos</a></li>
+              <li><a href="/pisos-e-revestimentos/porcelanato"
+                   title="Porcelanatos"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Porcelanatos</a></li>
+              <li><a href="/pisos-e-revestimentos/acabamento/porcelanato-acetinado-e-revestimentos"
+                   title="Porcelanato Acetinado"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Porcelanato Acetinado</a>
+              </li>
+              <li><a href="/pisos-e-revestimentos/rodape"
+                   title="Rodapé"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Rodapé</a></li>
+              <li><a href="/pisos-e-revestimentos/aplicacao/revestimento-de-parede"
+                   title="Revestimento de Parede"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Revestimento de Parede</a>
+              </li>
+              <li><a href="/pisos-e-revestimentos/visual/porcelanato-marmorizado-e-revestimentos"
+                   title="Porcelanato Marmorizado"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Porcelanato Marmorizado</a>
+              </li>
+              <li><a href="/pisos-e-revestimentos/ambiente/revestimento-para-banheiro/revestimento-banheiro"
+                   title="Revestimento para Banheiro"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Revestimento para
+                  Banheiro</a></li>
+              <li><a href="/pisos-e-revestimentos/ambiente/piso-para-cozinha-e-revestimentos"
+                   title="Revestimento para Cozinha"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Revestimento para Cozinha</a>
+              </li>
+              <li><a href="/pisos-e-revestimentos/acabamento/porcelanato-polido-e-revestimentos"
+                   title="Porcelanato Polido"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Porcelanato Polido</a></li>
+              <li><a href="/pisos-e-revestimentos"
+                   title="Ver tudo"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link underline  link">Ver tudo</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a href="/banheiro"
+                   title="Banheiro"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link  dexcoprod2-store-2-x-strong link">Banheiro</a>
+              </li>
+              <li><a href="/banheiro/vaso-sanitario"
+                   title="Vaso Sanitário"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Vaso Sanitário</a></li>
+              <li><a href="/banheiro/ducha-higienica"
+                   title="Ducha Higiênica"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Ducha Higiênica</a></li>
+              <li><a href="/banheiro/cuba-para-banheiro"
+                   title="Cuba para Banheiro"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Cuba para Banheiro</a></li>
+              <li><a href="/banheiro/torneira-para-banheiro"
+                   title="Torneira para Banheiro"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira para Banheiro</a>
+              </li>
+              <li><a href="/banheiro/torneira-para-banheiro/torneira-convencional"
+                   title="Torneira Convencional"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira Convencional</a>
+              </li>
+              <li><a href="/banheiro/assento-sanitario"
+                   title="Assento Sanitário"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Assento Sanitário</a></li>
+              <li><a href="/banheiro/chuveiros-e-duchas"
+                   title="Chuveiros e Duchas"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Chuveiros e Duchas</a></li>
+              <li><a href="/banheiro/vaso-sanitario/caixa-acoplada"
+                   title="Caixa Acoplada"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Caixa Acoplada</a></li>
+              <li><a href="/banheiro"
+                   title="Ver tudo"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link underline  link">Ver tudo</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a href="/cozinha"
+                   title="Cozinha"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link  dexcoprod2-store-2-x-strong link">Cozinha</a>
+              </li>
+              <li><a href="/cozinha/torneira-para-cozinha"
+                   title="Torneira para Cozinha"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira para Cozinha</a>
+              </li>
+              <li><a href="/cozinha/torneira-para-cozinha/torneira-com-filtro"
+                   title="Torneira com Filtro"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira com Filtro</a></li>
+              <li><a href="/cozinha/acessorios-para-cozinha/triturador-de-alimentos"
+                   title="Triturador de Alimentos"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Triturador de Alimentos</a>
+              </li>
+              <li><a href="/cozinha/cuba-para-cozinha"
+                   title="Cuba para Cozinha"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Cuba para Cozinha</a></li>
+              <li><a href="/cozinha/torneira-para-cozinha/torneira-monocomando"
+                   title="Torneira Monocomando"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira Monocomando</a></li>
+              <li><a href="/cozinha/cuba-para-cozinha/cuba-de-inox"
+                   title="Cuba de Inox"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Cuba de Inox</a></li>
+              <li><a href="/cozinha/acessorios-para-cozinha"
+                   title="Acessórios para Cozinha"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Acessórios para Cozinha</a>
+              </li>
+              <li><a href="/cozinha/torneira-para-cozinha/torneira-gourmet"
+                   title="Torneira Gourmet"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira Gourmet</a></li>
+              <li><a href="/cozinha"
+                   title="Ver tudo"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link underline  link">Ver tudo</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><a href="/lavanderia-e-area-externa"
+                   title="Lavandeiras e Área Externa"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link  dexcoprod2-store-2-x-strong link">Lavandeiras
+                  e Área Externa</a></li>
+              <li><a href="/lavanderia-e-area-externa/lavanderia/tanque-de-lavar-roupa"
+                   title="/lavanderia-e-area-externa/lavanderia/tanque-de-lavar-roupa"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Tanque de Lavar Roupa</a>
+              </li>
+              <li><a href="/pisos-e-revestimentos/ambiente/revestimento-para-churrasqueira"
+                   title="Revestimento para Churrasqueira"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Revestimento para
+                  Churrasqueira</a></li>
+              <li><a href="/lavanderia-e-area-externa/torneira-para-jardim"
+                   title="Torneira para Jardim"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira para Jardim</a></li>
+              <li><a href="/lavanderia-e-area-externa/lavanderia/torneira-para-lavanderia"
+                   title="Torneira para Lavanderia"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Torneira para Lavanderia</a>
+              </li>
+              <li><a href="/pisos-e-revestimentos/ambiente/piso-para-area-externa-e-revestimentos/revestimento"
+                   title="Revestimento para Área Externa"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Revestimento para Área
+                  Externa</a></li>
+              <li><a href="/pisos-e-revestimentos/ambiente/revestimento-para-lavanderia"
+                   title="Revestimento para Lavanderia"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Revestimento para
+                  Lavanderia</a></li>
+              <li><a href="/lavanderia-e-area-externa/chuveiro-para-area-externa"
+                   title="Chuveiro para Área Externa"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Chuveiro para Área
+                  Externa</a></li>
+              <li><a href="/pisos-e-revestimentos/ambiente/piso-para-lavanderia-area-externa"
+                   title="Piso para Lavanderia"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Piso para Lavanderia</a></li>
+              <li><a href="/lavanderia-e-area-externa"
+                   title="Ver tudo"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link underline  link">Ver tudo</a></li>
+            </ul>
+          </div>
+          <div class="links-columns">
+
+            <ul class="dexcoprod2-store-2-x-footer-nav-list__items list flex flex-column flex-wrap ma0 pa0">
+              <li><span title="Navegue por marcas"
+                      class="dexcoprod2-store-2-x-footer-nav-list__link  dexcoprod2-store-2-x-strong link">Navegue
+                  por marcas</span></li>
+              <li><a href="/deca"
+                   title="Deca"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Deca</a></li>
+              <li><a href="/portinari"
+                   title="Portinari"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Portinari</a></li>
+              <li><a href="/ceusa"
+                   title="Ceusa"
+                   class="dexcoprod2-store-2-x-footer-nav-list__link   link">Ceusa</a></li>
+              <li><span title
+                      class="dexcoprod2-store-2-x-footer-nav-list__link   link"></span></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
 </footer>
 <div class="final-footer">
   <div class="final-footer-container">
-    <p class="payment-method-title">Formas de pagamento:</p>
-    <div class="payments-methods">
-      <img src="{{settings.visa_icon}}" alt="Visa" />
-      <img src="{{settings.mastercard_icon}}" alt="Mastercard" />
-      <img src="{{settings.dinners_icon}}" alt="Dinners" />
-      <img src="{{settings.hipercard_icon}}" alt="Hipercard" />
-      <img src="{{settings.amex_icon}}" alt="Amex" />
-      <img src="{{settings.elo_icon}}" alt="Elo" />
-      <img src="{{settings.boleto_icon}}" alt="Boleto" />
-      <img src="{{settings.pix_icon}}" alt="Pix" />
-    </div>
     <div class="address">
-      <p>Dexco S.A. | CNPJ: 97.837.181/0001-47</p>
-      <p>Av. Paulista - 1938 - Bela Vista - São Paulo - SP - Cep: 01310-942</p>
+      <p>DX Store S.A | CNPJ 16.564.523/0001-09</p>
+      <p>Av. Paulista, 1938 - Bela Vista - São Paulo/SP - Cep 01310-942</p>
+    </div>
+    <div class="payments-methods">
+      <img src="{{settings.visa_icon}}"
+           alt="Visa" />
+      <img src="{{settings.mastercard_icon}}"
+           alt="Mastercard" />
+      <img src="{{settings.dinners_icon}}"
+           alt="Dinners" />
+      <img src="{{settings.hipercard_icon}}"
+           alt="Hipercard" />
+      <img src="{{settings.amex_icon}}"
+           alt="Amex" />
+      <img src="{{settings.elo_icon}}"
+           alt="Elo" />
+      <img src="{{settings.boleto_icon}}"
+           alt="Boleto" />
+      <img src="{{settings.pix_icon}}"
+           alt="Pix" />
+    </div>
+    <div class="flags">
+      <img src="https://dexcoprod2.vteximg.com.br/arquivos/Frame%201171275905.png"
+           alt="certificado site seguro"
+           class="flag-image" />
+      <img src="https://dexcoprod2.vteximg.com.br/arquivos/Frame%201171275940.png"
+           alt="certificado reclame aqui status otimo"
+           class="flag-image" />
+      <img src="https://dexcoprod2.vteximg.com.br/arquivos/Frame%201171275907.png"
+           alt="certificado checkout seguro"
+           class="flag-image" />
     </div>
     <div class="partners">
-       <img src="{{settings.corebiz_icon}}" alt="Corebiz" />
-      <img src="{{settings.vtex_icon}}" alt="VTEX" />
+      <img src="{{settings.corebiz_icon}}"
+           alt="Corebiz" />
+      <img src="{{settings.vtex_icon}}"
+           alt="VTEX" />
     </div>
   </div>
 </div>

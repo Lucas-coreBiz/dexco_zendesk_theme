@@ -6,100 +6,89 @@ $padding-right: 20px;
 
 .search-container {
   position: relative;
-  margin-top: 39px;
-}
-
-.search {
-  border-bottom: 1px solid $text_color;
-  background: #ffff;
+  margin: 0;
+  padding: 20px 0 40px;
   display: flex;
-  position: relative;
-  transition: $input-transition;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
 
-  &:focus-within {
-    border-color: $brand_color;
+  @media screen and (max-width: 1480px) {
+    padding: 26px 0;
   }
 
-  input[type="search"], 
-  .clear-button {
-    background-color: #fff;
-    border: none;
-  }
+  @media screen and (max-width: 720px) {
+      padding: 26px 100px;
+    }
+  @media screen and (max-width: 425px) {
+      padding: 26px 20px 0;
+    }
 
-  &-full input[type="search"], 
-  &-full .clear-button {
-    border-color: #fff;
-  }
-
-  input[type="search"] {
-    appearance: none;
-    -webkit-appearance: none;
-    box-sizing: border-box;
-    flex: 1 1 auto;
-    height: 40px;
-    width: 100%;
-    color: $text_color;
-    font-size: 16px;
-    font-style: normal;
+  .search-title {
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0.8px;
-
-    &:focus {
-      color: $text_color;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 22px;
-      letter-spacing: 0.8px;
-    }
-
-    &::placeholder {
-      color: $text_color;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 22px;
-      letter-spacing: 0.8px;
-    }
-
-    &::-webkit-search-decoration,
-    &::-webkit-search-cancel-button,
-    &::-webkit-search-results-button,
-    &::-webkit-search-results-decoration {
-      -webkit-appearance: none;
-    }
-
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover, 
-    &:-webkit-autofill:focus {
-      -webkit-box-shadow: 0 0 0 1000px #fff inset;
-    }
-
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 1.8px;
+    text-align: center;
+    margin: 0;
   }
 
-  .clear-button {
-    align-items: center;
-    box-sizing: border-box;
-    color: $icon-color;
-    cursor: pointer;
-    display: none;
-    flex: none;
-    justify-content: center;
-    padding: 0 15px;
-    outline: none;
+  .search {
+    border: 1px solid #000;
+    border-radius: 100px;
 
-    &:focus {
-      @include focus-ring;
-    }
-
-  }
-
-  &-has-value .clear-button {
+    background: #fff;
     display: flex;
-  }
+    position: relative;
+    transition: $input-transition;
+    max-width: 640px;
+    width: 100%;
+    height: 52px;
 
+    input[type="search"] {
+      padding: 0 20px;
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: #111;
+      background-color: transparent;
+
+      &::placeholder {
+        color: #3E3F41;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+
+      &::before {
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.4996 13.9996H14.7096L14.4296 13.7296C15.6296 12.3296 16.2496 10.4196 15.9096 8.38965C15.4396 5.60965 13.1196 3.38965 10.3196 3.04965C6.08965 2.52965 2.52965 6.08965 3.04965 10.3196C3.38965 13.1196 5.60965 15.4396 8.38965 15.9096C10.4196 16.2496 12.3296 15.6296 13.7296 14.4296L13.9996 14.7096V15.4996L18.2496 19.7496C18.6596 20.1596 19.3296 20.1596 19.7396 19.7496C20.1496 19.3396 20.1496 18.6696 19.7396 18.2596L15.4996 13.9996ZM9.49965 13.9996C7.00965 13.9996 4.99965 11.9896 4.99965 9.49965C4.99965 7.00965 7.00965 4.99965 9.49965 4.99965C11.9896 4.99965 13.9996 7.00965 13.9996 9.49965C13.9996 11.9896 11.9896 13.9996 9.49965 13.9996Z' fill='%233E3F41'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: 16px center;
+        background-size: 24px;
+      }
+    }
+
+
+    .clear-button {
+      display: none;
+    }
+  }
 }
+
+
 
 [dir="ltr"] .search {
   input[type="search"] {
@@ -126,7 +115,7 @@ $padding-right: 20px;
     &:focus {
       border-left-color: $brand_color;
     }
-    
+
   }
 }
 

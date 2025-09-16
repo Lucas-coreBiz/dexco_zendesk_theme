@@ -1,29 +1,343 @@
 /***** Footer *****/
 .footer {
-  background-color: $deca_color_primary;
-  padding: 80px 0;
-  margin-top: 60px;
+  background-color: #92AC90;
+  padding: 34px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://dexcoprod2.vtexassets.com/assets/vtex/assets-builder/dexcoprod2.store/2.0.1-20/images/footer/footer-ilustracao___37b744d….png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 97%;
 
-  @include mobile {
-    margin-top: 40px;
+  @media screen and (max-width: 1504px) {
+    padding: 34px 32px;
+  }
+
+  @media screen and (max-width: 720px) {
+    padding-bottom: 260px;
+    background-position-x: 87%;
+    background-position-y: 98%;
+    background-size: 160%;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 20px 16px;
+    background-image: url(https://dexcoprod2.vtexassets.com/assets/vtex/assets-builder/dexcoprod2.store/2.0.1-20/images/footer/footer-ilustracao-mobile___200f28899820a96c2560d2e1eb6c948f.png);
+    background-position-x: 100%;
+    background-position-y: 100%;
+    padding-bottom: 200px;
+    background-size: 100%;
+  }
+
+  .newsletter-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    background: #FAFAFA;
+
+    @media screen and (max-width: 720px) {
+      gap: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    .newsletter-image {
+      width: 100%;
+      max-width: 416px;
+      height: auto;
+      object-fit: cover;
+
+      @media screen and (max-width: 1280px) {
+        max-width: 320px;
+      }
+
+      @media screen and (max-width: 720px) {
+        max-width: 290px;
+      }
+
+      @media screen and (max-width: 600px) {
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 425px) {
+        min-height: 254px;
+      }
+    }
+
+    .newsletter-content-container {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      padding: 32px;
+
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 425px) {
+        padding: 20px 20px 32px;
+      }
+
+      .newsletter-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px 0;
+        gap: 16px;
+        max-width: 500px;
+
+        @media screen and (max-width: 720px) {
+          padding: 0;
+        }
+
+        h2 {
+          font-family: $IvyPresto;
+          margin: 0;
+          color: #1B4534;
+          font-size: 50px;
+          font-style: normal;
+          letter-spacing: -0.02rem;
+          font-weight: 400;
+          line-height: 55px;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 44px;
+            line-height: 44px;
+          }
+        }
+
+        p {
+          margin: 0;
+          color: #3E3F41;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.05rem;
+          font-weight: 300;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 10px;
+            line-height: 14px;
+          }
+
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .newsletter-form {
+        padding: 32px 32px 32px 0;
+        width: 100%;
+        max-width: 460px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 1280px) {
+          max-width: 440px;
+        }
+
+        @media screen and (max-width: 720px) {
+          padding: 0;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          width: 100%;
+
+          input {
+            font-family: 'Roboto', sans-serif;
+            flex: 1;
+            padding: 12px 8px;
+            border: 1px solid #d4d4d4;
+            color: #111;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.05rem;
+            font-weight: 400;
+            width: 100%;
+            border-radius: 10px;
+            height: 60px;
+            outline: none;
+            background: #FFFFFF;
+
+
+            &::placeholder {
+              color: #d4d4d4;
+            }
+          }
+
+          button {
+            background-color: #1B4534;
+            color: white;
+            border: none;
+            padding: 6px 0;
+            font-size: 16px;
+            letter-spacing: 0.05rem;
+            font-weight: 300;
+            cursor: pointer;
+            height: 32px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+              background-color: darken(#1B4534, 10%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .footer-container {
-  @include max-width-container-small;
   display: flex;
   flex-direction: column;
-  gap: 97px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 48px 40px;
+
+  @media screen and (max-width: 1280px) {
+    padding: 48px 0px;
+  }
 }
 
 .footer-sections {
   display: flex;
-  gap: 150px;
   width: 100%;
+  flex-direction: row;
 
   @include mobile {
     gap: 50px;
     flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 0 12px;
+  }
+
+  &+.footer-sections {
+    margin-top: 24px;
+
+    @media screen and (max-width: 425px) {
+      margin-top: 16px;
+
+    }
+  }
+
+  .footer-sections-row {
+    width: 100%;
+
+    .footer-section-title-container+.row-container {
+      @media screen and (max-width: 720px) {
+        max-width: 540px;
+      }
+    }
+
+    .row-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 56px;
+
+      @media screen and (max-width: 720px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @media screen and (max-width: 425px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0 32px;
+      }
+
+      .links-columns {
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 720px) {
+          gap: 32px;
+          max-width: 125px;
+        }
+
+        @media screen and (max-width: 425px) {
+          gap: 12px;
+        }
+
+        &:first-of-type {
+          min-width: 220px;
+
+          @media screen and (max-width: 1280px) {
+            min-width: 200px;
+          }
+
+          @media screen and (max-width: 720px) {
+            min-width: 0px
+          }
+        }
+
+        h3 {
+          font-family: 'IvyPresto Headline';
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: -0.02rem;
+          color: #162518;
+          margin: 0;
+        }
+
+        ul {
+          li {
+            a {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0%;
+              color: #162518;
+              transition: .2s all cubic-bezier(0, 0, 0, 1);
+
+              &:hover {
+                color: #FFFFFF;
+                text-decoration: none;
+              }
+
+              &.dexcoprod2-store-2-x-strong {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-section-title-container {
+      .footer-section-title {
+        font-family: 'IvyPresto Headline';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -2%;
+        color: #162518;
+
+        @media screen and (max-width: 425px) {
+          margin-bottom: 16px;
+
+        }
+      }
+    }
   }
 }
 
@@ -49,7 +363,7 @@
 
   .mobile {
     display: flex;
-    
+
     @include tablet {
       display: none;
     }
@@ -130,44 +444,71 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 28px;
+  margin-bottom: 48px;
+
+  img {
+    filter: brightness(0);
+  }
 }
 
 .footer-brand {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
 
-  @include mobile {
+  @media screen and (max-width: 425px) {
     flex-direction: column;
+    gap: 20px;
   }
 }
 
 .footer-brand-container {
   max-height: 25px;
+
+
   img {
     max-width: 97px;
     max-height: 25px;
+
+    @media screen and (max-width: 720px) {
+      max-height: 20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-height: 25px;
+    }
   }
 }
 
 .final-footer {
   padding: 25px 0;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1280px) {
+    padding: 25px 32px;
+  }
+
+  @media screen and (max-width: 720px) {
+    padding: 20px 24px;
+  }
 }
 
 .final-footer-container {
-  @include max-width-container;
+  width: 100%;
+  max-width: 1440px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-  @include mobile {
-    flex-direction: column;
-    gap: 20px;
+  @media screen and (max-width: 720px) {
+    gap: 16px;
+    // padding: ;
   }
 
   .payment-method-title {
@@ -185,6 +526,12 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 265px;
+  }
 
   @include mobile {
     gap: 5px;
@@ -194,16 +541,19 @@
 .address {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
+  @media screen and (max-width: 1280px) {
+    max-width: 224px;
+  }
+
   p {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.0rem;
     margin: 0;
-    text-align: center;
   }
 }
 
@@ -211,4 +561,17 @@
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (max-width: 425px) {
+    img {
+      max-width: 115px;
+    }
+
+  }
 }
