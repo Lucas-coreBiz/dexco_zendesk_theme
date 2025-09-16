@@ -662,13 +662,12 @@
     const sectionItems = document.querySelectorAll(".section-item");
     const articlesList = document.getElementById("articles-list");
     const sectionTitle = document.createElement("h2");
-    const sectionSelect = document.getElementById("section-select");
 
     // Obter o token CSRF
     let csrfToken = "";
     try {
       const csrfResponse = await fetch(
-        "https://ajuda.decaloja.com.br/hc/api/internal/csrf_token.json"
+        "https://ajuda.casadexco.com.br/hc/api/internal/csrf_token.json"
       );
       const csrfData = await csrfResponse.json();
       csrfToken = csrfData.current_session.csrf_token;
@@ -682,7 +681,6 @@
       articlesList.prepend(sectionTitle);
 
       sectionItems.forEach((item) => item.classList.remove("selected"));
-      sectionSelect.value = sectionId;
 
       const selectedItem = document.querySelector(
         `.section-item[data-section-id="${sectionId}"]`
@@ -693,7 +691,7 @@
 
       try {
         const response = await fetch(
-          `https://ajuda.decaloja.com.br/api/v2/help_center/sections/${sectionId}/articles.json`,
+          `https://ajuda.casadexco.com.br/api/v2/help_center/sections/${sectionId}/articles.json`,
           {
             headers: {
               "X-CSRF-Token": csrfToken,
@@ -743,7 +741,7 @@
               if (articleBody.innerHTML === "") {
                 try {
                   const articleResponse = await fetch(
-                    `https://ajuda.decaloja.com.br/api/v2/help_center/articles/${article.id}.json`,
+                    `https://ajuda.casadexco.com.br/api/v2/help_center/articles/${article.id}.json`,
                     {
                       headers: {
                         "X-CSRF-Token": csrfToken,
@@ -779,7 +777,7 @@
                       const articleId = this.dataset.id;
                       try {
                         const response = await fetch(
-                          `https://ajuda.decaloja.com.br/hc/pt-br/articles/${articleId}/vote`,
+                          `https://ajuda.casadexco.com.br/hc/pt-br/articles/${articleId}/vote`,
                           {
                             method: "POST",
                             headers: {
@@ -841,13 +839,6 @@
       });
     });
 
-    sectionSelect.addEventListener("change", function () {
-      const selectedOption = this.options[this.selectedIndex];
-      const sectionId = selectedOption.value;
-      const sectionName = selectedOption.textContent;
-      loadArticles(sectionId, sectionName);
-    });
-
     const sacButton = document.getElementById("sac-button");
     const sacInfo = document.getElementById("sac-info");
 
@@ -855,20 +846,42 @@
       sacInfo.style.display = sacInfo.style.display === "none" ? "block" : "none";
     });
 
-    const atendimentoButton = document.querySelector(".header-callcenter-button");
-    const contactOptionsSection = document.querySelector(".contact-options");
+    const newsletterform = document.querySelector("#newsletter-form");
 
-    atendimentoButton.addEventListener("click", function () {
-      contactOptionsSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    newsletterform.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-      setTimeout(() => {
-        const headerHeight = document.querySelector(".header").offsetHeight;
+      const email = document.querySelector("#newsletter-email").value;
+      const name = document.querySelector("#newsletter-name").value;
 
-        window.scrollBy(0, -headerHeight);
-      }, 500);
+      name.split(" ")[0];
+      name.split(" ").slice(1).join(" ");
+
+      const urlGetCLientDocumetnId = `https://dexcoprod2.myvtex.com/_v/app/middleware/client/${email}`;
+
+      fetch(urlGetCLientDocumetnId, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Accept': 'application/json'
+        }
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log("Client document data:", data);
+          // You can process the client document data here
+        })
+        .catch(error => {
+          console.error("Error fetching client document:", error);
+        });
+
+      console.log("doara 2");
     });
   });
 
