@@ -1,7 +1,7 @@
 {
   "name": "casadexco",
   "author": "casadexco",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -282,20 +282,182 @@
           "type": "text",
           "description": "quick_link_description_1",
           "label": "quick_link_label_1",
-          "value": "/"
+          "value": "/hc/pt-br"
         },
         {
           "identifier": "quick_link_text_1",
           "type": "text",
           "description": "quick_link_text_description_1",
           "label": "quick_link_text_label_1",
-          "value": "Quem somos"
+          "value": "Trocas e Lojas Fisicas"
         },
         {
           "identifier": "quick_link_icon_1",
           "type": "file",
           "description": "quick_link_icon_description_1",
           "label": "quick_link_icon_label_1"
+        },
+        {
+          "identifier": "show_quick_links_2",
+          "type": "checkbox",
+          "description": "show_quick_links_description_2",
+          "label": "show_quick_links_label_2",
+          "value": true
+        },
+        {
+          "identifier": "quick_link_2",
+          "type": "text",
+          "description": "quick_link_description_2",
+          "label": "quick_link_label_2",
+          "value": "/"
+        },
+        {
+          "identifier": "quick_link_text_2",
+          "type": "text",
+          "description": "quick_link_text_description_2",
+          "label": "quick_link_text_label_2",
+          "value": "Vales-trocas e Voucher"
+        },
+        {
+          "identifier": "quick_link_icon_2",
+          "type": "file",
+          "description": "quick_link_icon_description_2",
+          "label": "quick_link_icon_label_2"
+        },
+        {
+          "identifier": "show_quick_links_3",
+          "type": "checkbox",
+          "description": "show_quick_links_description_3",
+          "label": "show_quick_links_label_3",
+          "value": true
+        },
+        {
+          "identifier": "quick_link_3",
+          "type": "text",
+          "description": "quick_link_description_3",
+          "label": "quick_link_label_3",
+          "value": "/"
+        },
+        {
+          "identifier": "quick_link_text_3",
+          "type": "text",
+          "description": "quick_link_text_description_3",
+          "label": "quick_link_text_label_3",
+          "value": "Status de Pagamento"
+        },
+        {
+          "identifier": "quick_link_icon_3",
+          "type": "file",
+          "description": "quick_link_icon_description_3",
+          "label": "quick_link_icon_label_3"
+        },
+        {
+          "identifier": "show_quick_links_4",
+          "type": "checkbox",
+          "description": "show_quick_links_description_4",
+          "label": "show_quick_links_label_4",
+          "value": true
+        },
+        {
+          "identifier": "quick_link_4",
+          "type": "text",
+          "description": "quick_link_description_4",
+          "label": "quick_link_label_4",
+          "value": "/"
+        },
+        {
+          "identifier": "quick_link_text_4",
+          "type": "text",
+          "description": "quick_link_text_description_4",
+          "label": "quick_link_text_label_4",
+          "value": "Acompanhar Meus pedidos"
+        },
+        {
+          "identifier": "quick_link_icon_4",
+          "type": "file",
+          "description": "quick_link_icon_description_4",
+          "label": "quick_link_icon_label_4"
+        },
+        {
+          "identifier": "show_quick_links_5",
+          "type": "checkbox",
+          "description": "show_quick_links_description_5",
+          "label": "show_quick_links_label_5",
+          "value": true
+        },
+        {
+          "identifier": "quick_link_5",
+          "type": "text",
+          "description": "quick_link_description_5",
+          "label": "quick_link_label_5",
+          "value": "/"
+        },
+        {
+          "identifier": "quick_link_text_5",
+          "type": "text",
+          "description": "quick_link_text_description_5",
+          "label": "quick_link_text_label_5",
+          "value": "Alterar Meus Dados"
+        },
+        {
+          "identifier": "quick_link_icon_5",
+          "type": "file",
+          "description": "quick_link_icon_description_5",
+          "label": "quick_link_icon_label_5"
+        },
+        {
+          "identifier": "show_quick_links_6",
+          "type": "checkbox",
+          "description": "show_quick_links_description_6",
+          "label": "show_quick_links_label_6",
+          "value": true
+        },
+        {
+          "identifier": "quick_link_6",
+          "type": "text",
+          "description": "quick_link_description_6",
+          "label": "quick_link_label_6",
+          "value": "/"
+        },
+        {
+          "identifier": "quick_link_text_6",
+          "type": "text",
+          "description": "quick_link_text_description_6",
+          "label": "quick_link_text_label_6",
+          "value": "Alterar Senha"
+        },
+        {
+          "identifier": "quick_link_icon_6",
+          "type": "file",
+          "description": "quick_link_icon_description_6",
+          "label": "quick_link_icon_label_6"
+        },
+        {
+          "identifier": "show_quick_links_7",
+          "type": "checkbox",
+          "description": "show_quick_links_description_7",
+          "label": "show_quick_links_label_7",
+          "value": true
+        },
+        {
+          "identifier": "quick_link_7",
+          "type": "text",
+          "description": "quick_link_description_7",
+          "label": "quick_link_label_7",
+          "value": "/"
+        },
+        {
+          "identifier": "quick_link_text_7",
+          "type": "text",
+          "description": "quick_link_text_description_7",
+          "label": "quick_link_text_label_7",
+          "value": "Garantia e Assistência"
+        },
+        {
+          "identifier": "quick_link_icon_7",
+          "type": "file",
+          "description": "quick_link_icon_description_7",
+          "label": "quick_link_icon_label_7"
         }
       ]
     },
