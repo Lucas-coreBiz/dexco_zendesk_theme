@@ -1,7 +1,7 @@
 {
   "name": "casadexco",
   "author": "casadexco",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -264,6 +264,25 @@
           "type": "file",
           "description": "favicon_description",
           "label": "favicon_label"
+        }
+      ]
+    },
+    {
+      "label": "quick_links_group_label",
+      "variables": [
+        {
+          "identifier": "show_quick_links",
+          "type": "checkbox",
+          "description": "show_quick_links_description",
+          "label": "show_quick_links_label",
+          "value": true
+        },
+        {
+          "identifier": "quick_links",
+          "type": "text",
+          "description": "quick_links_description",
+          "label": "quick_links_label",
+          "value": "[]"
         }
       ]
     },
