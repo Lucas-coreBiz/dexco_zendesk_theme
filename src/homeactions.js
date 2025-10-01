@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   let csrfToken = "";
   try {
     const csrfResponse = await fetch(
-      "https://casadexco.zendesk.com/hc/api/internal/csrf_token.json"
+      "https://ajuda.casadexco.com.br/hc/api/internal/csrf_token.json"
     );
     const csrfData = await csrfResponse.json();
     csrfToken = csrfData.current_session.csrf_token;
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     try {
       const response = await fetch(
-        `https://casadexco.zendesk.com/api/v2/help_center/sections/${sectionId}/articles.json`,
+        `https://ajuda.casadexco.com.br/api/v2/help_center/sections/${sectionId}/articles.json`,
         {
           headers: {
             "X-CSRF-Token": csrfToken,
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             if (articleBody.innerHTML === "") {
               try {
                 const articleResponse = await fetch(
-                  `https://casadexco.zendesk.com/api/v2/help_center/articles/${article.id}.json`,
+                  `https://ajuda.casadexco.com.br/api/v2/help_center/articles/${article.id}.json`,
                   {
                     headers: {
                       "X-CSRF-Token": csrfToken,
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     const articleId = this.dataset.id;
                     try {
                       const response = await fetch(
-                        `https://casadexco.zendesk.com/hc/pt-br/articles/${articleId}/vote`,
+                        `https://ajuda.casadexco.com.br/hc/pt-br/articles/${articleId}/vote`,
                         {
                           method: "POST",
                           headers: {
@@ -185,42 +185,4 @@ document.addEventListener("DOMContentLoaded", async function () {
   sacButton.addEventListener("click", function () {
     sacInfo.style.display = sacInfo.style.display === "none" ? "block" : "none";
   });
-
-  const newsletterform = document.querySelector("#newsletter-form");
-
-  newsletterform.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const email = document.querySelector("#newsletter-email").value
-    const name = document.querySelector("#newsletter-name").value
-
-    const firstName = name.split(" ")[0];
-    const lastName = name.split(" ").slice(1).join(" ");
-
-    const urlGetCLientDocumetnId = `https://dexcoprod2.myvtex.com/_v/app/middleware/client/${email}`;
-
-    fetch(urlGetCLientDocumetnId, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Accept': 'application/json'
-      }
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log("Client document data:", data);
-        // You can process the client document data here
-      })
-      .catch(error => {
-        console.error("Error fetching client document:", error);
-      });
-
-    console.log("doara 2")
-  })
 });
