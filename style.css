@@ -880,6 +880,7 @@ ul {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 97%;
+  background: url($quick_link_icon_11);
 }
 @media screen and (max-width: 1504px) {
   .footer {
