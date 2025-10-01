@@ -1,7 +1,7 @@
 {
   "name": "casadexco",
   "author": "casadexco",
-  "version": "1.0.35",
+  "version": "1.0.36",
   "api_version": 4,
   "default_locale": "pt-br",
   "settings": [
@@ -295,8 +295,7 @@
           "identifier": "quick_link_icon_1",
           "type": "file",
           "description": "quick_link_icon_description_1",
-          "label": "quick_link_icon_label_1",
-          "value": ""
+          "label": "quick_link_icon_label_1"
         }
       ]
     },
