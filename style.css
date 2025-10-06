@@ -197,6 +197,9 @@ body {
 body > main {
   background: #F1F1F1;
 }
+body > main:not(:has(> #main-content)) {
+  padding-bottom: 40px;
+}
 @media (min-width: 1024px) {
   body > main {
     min-height: 65vh;
@@ -307,6 +310,7 @@ a:hover, a:active, a:focus {
 .container-divider {
   border-top: 1px solid #ddd;
   margin-bottom: 20px;
+  padding-top: 140px;
 }
 
 ul {
@@ -1589,7 +1593,7 @@ ul {
 
 .search-icon {
   position: relative;
-  top: 48%;
+  top: 42%;
   transform: translateY(-50%);
   position: absolute;
   left: 16px;
@@ -2633,6 +2637,7 @@ ul {
   margin-right: 10px;
 }
 .article-author {
+  display: none;
   margin-bottom: 10px;
 }
 .article-title {
@@ -2787,6 +2792,10 @@ ul {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  display: none;
+}
+.article-comments {
+  display: none;
 }
 .article-comment-count {
   color: lighten($text_color, 20%);
@@ -2850,13 +2859,15 @@ ul {
   font-weight: normal;
   margin-bottom: 0;
 }
+.article-votes-count {
+  display: none;
+}
 .article-vote {
   margin: 10px 5px;
   min-width: 90px;
   width: auto;
 }
 .article-more-questions {
-  margin: 10px 0 20px;
   text-align: center;
 }
 .article-more-questions a {
@@ -2887,6 +2898,9 @@ ul {
 }
 .article-return-to-top-icon {
   transform: rotate(0.5turn);
+}
+.article-subscribe button {
+  display: none;
 }
 .article td > p:first-child,
 .article th > p:first-child {
@@ -4573,6 +4587,7 @@ ul {
 .meta-data {
   color: lighten($text_color, 20%);
   font-size: 13px;
+  display: none;
 }
 .meta-data:not(:last-child)::after {
   content: "·";
@@ -5167,7 +5182,7 @@ ul {
 
 .profile-activity-icon svg {
   position: relative;
-  top: 48%;
+  top: 42%;
   transform: translateY(-50%);
   width: 1em;
   height: 1em;

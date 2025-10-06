@@ -13,6 +13,11 @@ body {
 
   > main {
     background: #F1F1F1;
+
+    &:not(:has(> #main-content)){
+      padding-bottom: 40px;
+    }
+
     @include desktop {
       min-height: 65vh;
     }
@@ -131,6 +136,7 @@ a {
 .container-divider {
   border-top: 1px solid $low-contrast-border-color;
   margin-bottom: 20px;
+  padding-top: 140px;
 }
 
 ul {
