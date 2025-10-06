@@ -1593,7 +1593,7 @@ ul {
 
 .search-icon {
   position: relative;
-  top: 42%;
+  top: 48%;
   transform: translateY(-50%);
   position: absolute;
   left: 16px;
@@ -5182,7 +5182,7 @@ ul {
 
 .profile-activity-icon svg {
   position: relative;
-  top: 42%;
+  top: 48%;
   transform: translateY(-50%);
   width: 1em;
   height: 1em;
